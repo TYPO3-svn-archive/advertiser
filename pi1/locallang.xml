@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_advertiser_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="back">« Back to list</label>
+			<label index="backInEdit">« Back</label>
+			<label index="buyNow">Buy Now!</label>
+			<label index="dateofproduction">Age</label>
+			<label index="previewNote">Preview!</label>
+			<label index="vatDefault">incl. %d%% of VAT</label>
+			<label index="otherAds">All advertisements of this vendor</label>
+			<label index="dateOfProductionAsAge_years">%d years</label>
+			<label index="dateOfProductionAsAge_months">%d months</label>
+
+			<label index="yourorder">Your order</label>
+			<label index="adEdit">Edit ad</label>
+			<label index="adPublishAccept">By clicking „Publish ad“ you accept responsibility for the content of your offer and you give the explicit consent to possibly accruing costs (see „Your order“).
+To make changes to your ad click „Edit ad“.</label>
+			<label index="adPublish">Publish ad!</label>
+
+			<label index="errorNoShowUidHeader">Error</label>
+			<label index="errorNoShowUidText">Sorry, no advertisement selected.</label>
+			<label index="errorWrongShowUidHeader">Error</label>
+			<label index="errorWrongShowUidText">Sorry, no valid advertisement selected.
+Please check the entered address!</label>
+			<label index="errorWrongMail">Please check your email address!</label>
+			<label index="errorWrongCaptcha">The security request solution is not correct!</label>
+			<label index="errorSenderBlacklisted">Thank you very much.</label>
+			<label index="mailSendError">Your message could not be sent</label>
+			<label index="mailSendSuccess">Thank you very much. Your message was sent.</label>
+			<label index="mailSendNotice">To send a message to the suitor please simply use the "Anwer" button of youer mail programm.</label>
+			<label index="mailSendImprint">This email was sent via %s.</label>
+			<label index="mailSendImprintPhone">Phone:</label>
+
+			<label index="tx_advertiser_ads">Advertisement</label>
+			<label index="tx_advertiser_ads.type.I.0">Bid</label>
+			<label index="tx_advertiser_ads.type.I.1">Request</label>
+			<label index="tx_advertiser_ads.type">Type</label>
+			<label index="tx_advertiser_ads.product_group">Product group</label>
+			<label index="tx_advertiser_ads.manufacturer">Manufacturer</label>
+			<label index="tx_advertiser_ads.title">Indication</label>
+			<label index="tx_advertiser_ads.description">Description</label>
+			<label index="tx_advertiser_ads.category">Category</label>
+			<label index="tx_advertiser_ads.state">State</label>
+			<label index="tx_advertiser_ads.dateofproduction">Date of production</label>
+			<label index="tx_advertiser_ads.warranty">Remaining warranty (in months)</label>
+			<label index="tx_advertiser_ads.image">Photo</label>
+			<label index="tx_advertiser_ads.price">Price</label>
+			<label index="tx_advertiser_ads.vat">VAT included (%)</label>
+			<label index="tx_advertiser_ads.price_option">Price mode</label>
+			<label index="tx_advertiser_ads.shipping">Shipping costs</label>
+			<label index="tx_advertiser_ads.dispatch">Dispatch</label>
+			<label index="tx_advertiser_ads.payment">Payment</label>
+			<label index="tx_advertiser_ads.fe_user">Advertiser</label>
+			<label index="tx_advertiser_ads.premium.I.0">Standard advertisement</label>
+			<label index="tx_advertiser_ads.premium.I.1">Premium advertisement</label>
+			<label index="tx_advertiser_ads.premium">Option</label>
+			<label index="tx_advertiser_ads.sold">sold</label>
+			<label index="tx_advertiser_manufacturers">Manufacturer</label>
+			<label index="tx_advertiser_manufacturers.title">Manufacturer</label>
+			<label index="tx_advertiser_manufacturers.title_lang_ol">Manufacturer: anguage overlays</label>
+			<label index="tx_advertiser_manufacturers.image">Logo</label>
+			<label index="tx_advertiser_states">State</label>
+			<label index="tx_advertiser_states.title">State</label>
+			<label index="tx_advertiser_states.title_lang_ol">State: language overlays</label>
+			<label index="tx_advertiser_productgroups">Product group</label>
+			<label index="tx_advertiser_productgroups.title">Product group</label>
+			<label index="tx_advertiser_productgroups.title_lang_ol">Product group: language overlays</label>
+			<label index="tx_advertiser_categories">Category</label>
+			<label index="tx_advertiser_categories.title">Category</label>
+			<label index="tx_advertiser_categories.title_lang_ol">Category: language overlays</label>
+			<label index="tx_advertiser_payment">Mode of payment</label>
+			<label index="tx_advertiser_payment.title">Mode of payment</label>
+			<label index="tx_advertiser_payment.title_lang_ol">Mode of payment: language overlays</label>
+			<label index="tx_advertiser_dispatch">Mode of dispatch</label>
+			<label index="tx_advertiser_dispatch.title">Dispatch kind</label>
+			<label index="tx_advertiser_dispatch.title_lang_ol">Dispatch kind: language overlays</label>
+			<label index="tx_advertiser_price_options">Price options</label>
+			<label index="tx_advertiser_price_options.title">Price option</label>
+			<label index="tx_advertiser_price_options.title_lang_ol">Price option: language overlays</label>
+			<label index="tt_content.list_type_pi1">Ads: Mail to supplier</label>
+			<label index="tt_content.list_type_pi2">Ads: Supplier's information</label>
+			<label index="tt_content.list_type_pi3">Ads: Form handler</label>
+			<label index="tt_content.list_type_pi4">Ads: Switch to single view</label>
+			<label index="fe_users.tx_advertiser_divlabel">Advertiser</label>
+			<label index="fe_users.tx_advertiser_accept_gtc">Terms of use accepted</label>
+			<label index="merchantlabel">Ad by</label>
+			<label index="phonelabel">Phone</label>
+			<label index="message_to_advertiser">Message to advertiser</label>
+			<label index="message_your_name">Your name</label>
+			<label index="message_your_email">Your email address</label>
+			<label index="message_your_phone">Your phone number</label>
+			<label index="message_question">Question about</label>
+			<label index="message_your_question">Your question</label>
+			<label index="message_send">Send</label>
+			<label index="fe_users.tx_advertiser_merchant">Merchant</label>
+			<label index="fe_users.tx_advertiser_private">private</label>
+			<label index="fe_users.tx_advertiser_vat_id">Vat ID</label>
+			<label index="static_country_zones.zn_name_local">Region</label>
+			<label index="fe_users.city">City</label>
+
+			<label index="directContact_title">Direct contact to advertiser</label>
+
+			<label index="ad_notfound_title">Error:</label>
+			<label index="ad_notfound_header">Advert not found</label>
+			<label index="ad_notfound_desc"><![CDATA[
+				%1$s The requested advert was not found. %2$s
+				%1$s Possible reasons: %2$s
+				%3$s
+					%5$s The display period of the advert has run off %6$s
+					%5$s The advert is not valid any more %6$s
+					%5$s You may have used an outdated link or may have typed the address (URL) incorrectly. %6$s
+				%4$s
+			]]></label>
+		</languageKey>
+
+		<languageKey index="fr" type="array">
+			<label index="back">« Retour à l'aperçu</label>
+			<label index="backInEdit">« Retour</label>
+			<label index="buyNow">Buy Now!</label>
+			<label index="tx_advertiser_ads">Annonce</label>
+			<label index="tx_advertiser_ads.type.I.0">Exigence</label>
+			<label index="tx_advertiser_ads.type.I.1">Demande</label>
+			<label index="tx_advertiser_ads.type">Type</label>
+			<label index="tx_advertiser_ads.product_group">Groupe de produit</label>
+			<label index="tx_advertiser_ads.manufacturer">Fabricant</label>
+			<label index="tx_advertiser_ads.title">Indication</label>
+			<label index="tx_advertiser_ads.description">Description</label>
+			<label index="tx_advertiser_ads.category">Catégorie</label>
+			<label index="tx_advertiser_ads.state">Etat</label>
+			<label index="tx_advertiser_ads.dateofproduction">Date de production</label>
+			<label index="tx_advertiser_ads.warranty">Garantie restant (au cours des mois)</label>
+			<label index="tx_advertiser_ads.image">Photo</label>
+			<label index="tx_advertiser_ads.price">Prix</label>
+			<label index="tx_advertiser_ads.vat">T.V.A incluse (%)</label>
+			<label index="tx_advertiser_ads.price_option">Mode de prix</label>
+			<label index="tx_advertiser_ads.shipping">Frais d'expédition</label>
+			<label index="tx_advertiser_ads.dispatch">Expédition</label>
+			<label index="tx_advertiser_ads.payment">Paiement</label>
+			<label index="tx_advertiser_ads.fe_user">Annonceur</label>
+			<label index="tx_advertiser_ads.premium.I.0">Annonce de norme</label>
+			<label index="tx_advertiser_ads.premium.I.1">Annonce prime</label>
+			<label index="tx_advertiser_ads.premium">Option</label>
+			<label index="tx_advertiser_ads.sold">vend</label>
+			<label index="tx_advertiser_manufacturers">Fabricant</label>
+			<label index="tx_advertiser_manufacturers.title">Fabricant</label>
+			<label index="tx_advertiser_manufacturers.title_lang_ol">Fabricant: Traductions</label>
+			<label index="tx_advertiser_manufacturers.image">Logo</label>
+			<label index="tx_advertiser_states">Etat</label>
+			<label index="tx_advertiser_states.title">Etat</label>
+			<label index="tx_advertiser_states.title_lang_ol">Etat: Traductions</label>
+			<label index="tx_advertiser_productgroups">Groupe de produit</label>
+			<label index="tx_advertiser_productgroups.title">Groupe de produit</label>
+			<label index="tx_advertiser_productgroups.title_lang_ol">Groupe de produit: Traductions</label>
+			<label index="tx_advertiser_categories">Catégorie</label>
+			<label index="tx_advertiser_categories.title">Catégorie</label>
+			<label index="tx_advertiser_categories.title_lang_ol">Catégorie: Traductions</label>
+			<label index="tx_advertiser_payment">Manière de paiement</label>
+			<label index="tx_advertiser_payment.title">Manière de paiement</label>
+			<label index="tx_advertiser_payment.title_lang_ol">Manière de paiement: Traductions</label>
+			<label index="tx_advertiser_dispatch">Manière d'expédition</label>
+			<label index="tx_advertiser_dispatch.title">Manière d'expédition</label>
+			<label index="tx_advertiser_dispatch.title_lang_ol">Manière d'expédition: Traductions</label>
+			<label index="tx_advertiser_price_options">Option de prix</label>
+			<label index="tx_advertiser_price_options.title">Option de prix</label>
+			<label index="tx_advertiser_price_options.title_lang_ol">Option de prix: Traductions</label>
+			<label index="tt_content.list_type_pi1">Ads: Mail au fournisseur</label>
+			<label index="tt_content.list_type_pi2">Ads: Information de fournisseur</label>
+			<label index="tt_content.list_type_pi3">Ads: Formulaire</label>
+			<label index="tt_content.list_type_pi4">Ads: Distributeur à l'avis individuel</label>
+			<label index="fe_users.tx_advertiser_divlabel">Advertiser</label>
+			<label index="fe_users.tx_advertiser_accept_gtc">Conditions d'utilisation accepté</label>
+			<label index="fe_users.tx_advertiser_merchant">Marchand</label>
+			<label index="fe_users.tx_advertiser_private">privée</label>
+			<label index="fe_users.tx_advertiser_vat_id">Numéro d'identification de T.V.A.</label>
+		</languageKey>
+
+		<languageKey index="de" type="array">
+<!--
+			<label index="back">« Zurück zur Übersicht<label>
+			<label index="backInEdit">« Zurück</label>
+			<label index="buyNow">Jetzt kaufen!</label>
+			<label index="dateofproduction">Alter</label>
+			<label index="previewNote">Vorschau!</label>
+-->
+			<label index="vatDefault">inkl. %d%% Mwst.</label>
+			<label index="otherAds">Alle Inserate dieses Anbieters</label>
+<!--
+			<label index="dateOfProductionAsAge_years">%d Jahre</label>
+			<label index="dateOfProductionAsAge_months">%d Monate</label>
+-->
+			<label index="yourorder">Ihr Auftrag</label>
+			<label index="adEdit">Inserat bearbeiten</label>
+			<label index="adPublishAccept">Durch Klicken auf „Inserat veröffentlichen“ verpflichten Sie sich zur Übernahme der Verantwortung für den Inhalt Ihres Angebots und stimmen den eventuell anfallenden Kosten (siehe „IHR AUFTRAG“) ausdrücklich zu.
+Wenn Sie Änderungen an Ihrem Angebot vornehmen möchten, klicken Sie auf „Inserat bearbeiten“.
+</label>
+			<label index="adPublish">Inserat veröffentlichen!</label>
+
+			<label index="errorNoShowUidHeader">Fehler</label>
+			<label index="errorNoShowUidText">Pardon, es wurde kein Inserat ausgewählt.</label>
+			<label index="errorWrongShowUidHeader">Fehler</label>
+			<label index="errorWrongShowUidText">Pardon, es wurde kein gültiges Inserat ausgewählt.
+Bitte prüfen Sie die eingegebene Adresse!</label>
+			<label index="errorWrongMail">Bitte prüfen Sie die eingegebene Email-Adresse!</label>
+			<label index="errorWrongCaptcha">Die Sicherheitsabfrage wurde nicht korrekt beantwortet!</label>
+			<label index="errorSenderBlacklisted">Vielen Dank.</label>
+			<label index="mailSendError">Ihre Nachricht konnte nicht versandt werden</label>
+			<label index="mailSendSuccess">Vielen Dank. Ihre Nachricht wurde gesendet.</label>
+			<label index="mailSendNotice">Für eine Nachricht an den Interessenten benutzen Sie bitte einfach die Antwortfunktion Ihres Email-Programms.</label>
+			<label index="mailSendImprint">Diese Email wurde versandt über %s.</label>
+			<label index="mailSendImprintPhone">Tel.:</label>
+
+			<label index="tx_advertiser_ads">Inserat</label>
+			<label index="tx_advertiser_ads.type.I.0">Verkauf</label>
+			<label index="tx_advertiser_ads.type.I.1">Ankauf</label>
+			<label index="tx_advertiser_ads.type">Typ</label>
+			<label index="tx_advertiser_ads.product_group">Produktgruppe</label>
+			<label index="tx_advertiser_ads.manufacturer">Hersteller</label>
+			<label index="tx_advertiser_ads.title">Bezeichung</label>
+			<label index="tx_advertiser_ads.description">Beschreibung</label>
+			<label index="tx_advertiser_ads.category">Kategorie</label>
+			<label index="tx_advertiser_ads.state">Zustand</label>
+			<label index="tx_advertiser_ads.dateofproduction">Alter</label>
+			<label index="tx_advertiser_ads.warranty">Verbleibende Garantie (in Monaten)</label>
+			<label index="tx_advertiser_ads.image">Foto</label>
+			<label index="tx_advertiser_ads.price">Preis</label>
+			<label index="tx_advertiser_ads.vat">enthaltene USt (%)</label>
+			<label index="tx_advertiser_ads.price_option">Preismodus</label>
+			<label index="tx_advertiser_ads.shipping">Versandkosten</label>
+			<label index="tx_advertiser_ads.dispatch">Versand</label>
+			<label index="tx_advertiser_ads.payment">Zahlung</label>
+			<label index="tx_advertiser_ads.fe_user">Inserent</label>
+			<label index="tx_advertiser_ads.premium.I.0">Standardinserat</label>
+			<label index="tx_advertiser_ads.premium.I.1">Premiuminserat</label>
+			<label index="tx_advertiser_ads.premium">Option</label>
+			<label index="tx_advertiser_ads.sold">verkauft</label>
+			<label index="tx_advertiser_manufacturers">Hersteller</label>
+			<label index="tx_advertiser_manufacturers.title">Hersteller</label>
+			<label index="tx_advertiser_manufacturers.title_lang_ol">Hersteller: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+			<label index="tx_advertiser_manufacturers.image">Logo</label>
+			<label index="tx_advertiser_states">Zustand</label>
+			<label index="tx_advertiser_states.title">Zustand</label>
+			<label index="tx_advertiser_states.title_lang_ol">Zustand: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+			<label index="tx_advertiser_productgroups">Produktgruppe</label>
+			<label index="tx_advertiser_productgroups.title">Produktgruppe</label>
+			<label index="tx_advertiser_productgroups.title_lang_ol">Produktgruppe: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+			<label index="tx_advertiser_categories">Kategorie</label>
+			<label index="tx_advertiser_categories.title">Kategorie</label>
+			<label index="tx_advertiser_categories.title_lang_ol">Kategorie: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+			<label index="tx_advertiser_payment">Zahlungsweise</label>
+			<label index="tx_advertiser_payment.title">Zahlungsweise</label>
+			<label index="tx_advertiser_payment.title_lang_ol">Zahlungsweise: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+			<label index="tx_advertiser_dispatch">Versandart</label>
+			<label index="tx_advertiser_dispatch.title">Versandart</label>
+			<label index="tx_advertiser_dispatch.title_lang_ol">Versandart: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+			<label index="tx_advertiser_price_options">Preisoption</label>
+			<label index="tx_advertiser_price_options.title">Preisoption</label>
+			<label index="tx_advertiser_price_options.title_lang_ol">Preisoption: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+			<label index="tt_content.list_type_pi1">Ads: Mail an Anbieter</label>
+			<label index="tt_content.list_type_pi2">Ads: Anbieterinformation</label>
+			<label index="tt_content.list_type_pi3">Ads: Formular</label>
+			<label index="tt_content.list_type_pi4">Ads: Verteiler zu Einzelansicht</label>
+			<label index="fe_users.tx_advertiser_divlabel">Inserenten</label>
+			<label index="fe_users.tx_advertiser_accept_gtc">Nutzungsbedingungen akzeptiert</label>
+			<label index="merchantlabel">Angebot von</label>
+			<label index="phonelabel">Telefon</label>
+			<label index="message_to_advertiser">Nachricht an den Inserenten</label>
+			<label index="message_your_name">Ihr Name</label>
+			<label index="message_your_email">Ihre Email-Adresse</label>
+			<label index="message_your_phone">Ihre Telefonnummer</label>
+			<label index="message_question">Frage zu</label>
+			<label index="message_your_question">Ihre Frage</label>
+			<label index="message_send">Senden</label>
+			<label index="fe_users.tx_advertiser_merchant">Händler</label>
+			<label index="fe_users.tx_advertiser_private">privat</label>
+			<label index="fe_users.tx_advertiser_vat_id">USt.-ID</label>
+			<label index="directContact_title">Direktkontakt zum Verkäufer</label>
+
+			<label index="ad_notfound_title">Fehler:</label>
+			<label index="ad_notfound_header">Inserat nicht gefunden</label>
+			<label index="ad_notfound_desc"><![CDATA[
+				%1$s Das von Ihnen gesuchte Inserat konnte nicht gefunden werden. %2$s
+				%1$s Mögliche Ursachen: %2$s
+				%3$s
+					%5$s Der Anzeigezeitraum des Inserates ist abgelaufen %6$s
+					%5$s Das Inserat ist nicht mehr gültig %6$s
+					%5$s Sie haben eventuell einen veralteten Link verwendet oder die URL-Adresse nicht korrekt eingegeben. %6$s
+				%4$s
+			]]></label>
+		</languageKey>
+	</data>
+</T3locallang>

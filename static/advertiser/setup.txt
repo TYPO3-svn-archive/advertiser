@@ -1,0 +1,188 @@
+plugin {
+    tx_advertiser_pi1 {
+        	// [string] Fields with this appendix will be used for translation. I.e. tx_advertiser_productgroups.title_lang_ol
+		advanced.localization.TCA.field.appendix = _lang_ol
+
+            // [BOOLEAN] display a link to an list of all ads of this advertiser in extended single view?
+		displayOtherAds = {$plugin.tx_advertiser_pi1.displayOtherAds}
+
+            // [BOOLEAN] display a form whereby site visitor can come in contact with the vendor?
+		displayMailForm = {$plugin.tx_advertiser_pi1.displayMailForm}
+
+			// [INTEGER] default display duration of advertisements (in days)
+		dwelltime = {$plugin.tx_advertiser.dwelltime}
+
+            // [INTEGER] regular rate of your country in percent (default value)
+		stdTaxRate = {$plugin.tx_advertiser_pi1.stdTaxRate}
+
+
+			//  wrapping error messages
+		error_general_dataWrap = <div class="error">|</div>
+		error_general_dataWrap {
+		        header = <h2>|</h2>
+				text   = <p>|</p>
+		}
+			//  wrapping error messages
+		error_wrongMail_dataWrap    = <p class="error">|</p>
+		error_wrongCaptcha_dataWrap = <p class="error">|</p>
+		error_sendMail_dataWrap     = <p class="error">|</p>
+			//  wrapping success messages
+		error_wrongMail_dataWrap    = <p class="error">|</p>
+		error_wrongCaptcha_dataWrap = <p class="error">|</p>
+		success_sendMail_dataWrap   = <p>|</p>
+
+
+        dateOfProduction {
+                // [BOOLEAN]  display date of production as age (x years y months)?
+			asAge    = 1
+        	strftime{
+        	        //	[STRING]  otherwise strftime format (dependend on language)
+				default = %b %y
+				de      = %B %Y
+			}
+        }
+
+
+		template.file = fileadmin/templates/advertiser/default.singleView.tmpl
+		upload        = uploads/tx_advertiser/
+		editPid       = {$plugin.tx_advertiser_pi1.editPid}
+		listPid       = {$plugin.tx_advertiser_pi1.listPid}
+		userListPid   = {$plugin.tx_advertiser_pi1.userListPid}
+
+
+
+		select (
+			tx_advertiser_ads.uid, tx_advertiser_manufacturers.title, tx_advertiser_ads.title,
+			tx_advertiser_ads.price, tx_advertiser_price_options.title,
+			tx_advertiser_productgroups.title, tx_advertiser_states.title,
+			tx_advertiser_ads.dateofproduction, tx_advertiser_ads.warranty,
+			tx_advertiser_vat.title, tx_advertiser_ads.shipping, tx_advertiser_ads.productlink,
+			tx_advertiser_dispatch.title, tx_advertiser_payment.title,
+			tx_advertiser_ads.description, tx_advertiser_ads.image, tx_advertiser_ads.fe_user
+)
+		relations {
+			simple {
+				tx_advertiser_manufacturers.uid = tx_advertiser_ads.manufacturer
+				tx_advertiser_price_options.uid = tx_advertiser_ads.price_option
+				tx_advertiser_productgroups.uid = tx_advertiser_ads.product_group
+				tx_advertiser_states.uid        = tx_advertiser_ads.state
+				tx_advertiser_dispatch.uid      = tx_advertiser_ads.dispatch
+				tx_advertiser_vat.uid           = tx_advertiser_ads.vat
+			}
+			mm {
+				tx_advertiser_payment = payment
+			}
+		}
+		handleAs {
+			marker = tx_advertiser_manufacturers.title, tx_advertiser_ads.title, tx_advertiser_ads.price, tx_advertiser_ads.productlink, tx_advertiser_price_options.title
+			text   = tx_advertiser_ads.description
+			image  = tx_advertiser_ads.image
+		}
+
+		clean_up {
+			ifEmpty {
+				list   = 1
+				marker = 1
+			}
+			fields = tx_advertiser_ads.uid, tx_advertiser_ads.fe_user, tx_advertiser_vat.title
+		}
+
+		general_stdWrap {
+			parseFunc < lib.parseFunc_RTE
+			parseFunc {
+				nonTypoTagStdWrap {
+					encapsLines {
+						nonWrappedTag >
+					}
+				}
+			}
+		}
+
+		image {
+			file {
+				width  = {$plugin.tx_advertiser_pi1.imagefollowMaxW}
+				height = {$plugin.tx_advertiser_pi1.imagefollowMaxH}
+			}
+			wrap = <div id="img-container-###COUNTER###">|</div>
+
+			imageLinkWrap >
+			imageLinkWrap = 1
+			imageLinkWrap {
+				enable = 1
+				typolink {
+					parameter {
+						cObject = IMG_RESOURCE
+						cObject.file {
+							import.data = TSFE:lastImageInfo|origFile
+							maxW        = {$plugin.tx_browser_pi1.singlePopupMaxW}
+							maxH        = {$plugin.tx_browser_pi1.singlePopupMaxH}
+						}
+
+						override.field = image_link
+						override.listNum.stdWrap.data = register : IMAGE_NUM_CURRENT
+						override.if.isTrue.field = image_link
+					}
+
+					title.field = imagecaption // header
+					title.split.token.char = 10
+					title.split.returnKey.data = register : IMAGE_NUM_CURRENT
+					ATagParams            = rel="fancybox" class="jqfancybox"
+					ATagParams.override   = rel="fancybox{field:uid}" class="jqfancybox"
+					ATagParams.insertData = 1
+				}
+			}
+		}
+		imageFirst < .image
+		imageFirst {
+			file {
+				width  = {$plugin.tx_advertiser_pi1.imagefirstMaxH}
+				height = {$plugin.tx_advertiser_pi1.imagefirstMaxW}
+			}
+		}
+		imageLogo {
+			file = uploads/tx_srfeuserregister/
+			file {
+				maxW = {$plugin.tx_advertiser_pi1.imagelogoMaxH}
+				maxH = {$plugin.tx_advertiser_pi1.imagelogoMaxW}
+
+			}
+			maxItems = 1
+		}
+
+		tx_advertiser_ads_price {
+			noTrimWrap = || €|
+		}
+		tx_advertiser_ads_shipping {
+			noTrimWrap = || €|
+		}
+		tx_advertiser_ads_productlink {
+			noTrimWrap = |<p class="singleview-productlink">|</p>|
+		}
+		vatinfo {
+			noTrimWrap = |<span class="vatinfo">|</span>|
+		}
+
+		mail {
+			company     = {$myConst.client.company}
+			project     = {$myConst.client.project}
+			name        = {$myConst.client.name}
+			street      = {$myConst.client.street}
+			zip         = {$myConst.client.zip}
+			city        = {$myConst.client.city}
+			phone       = {$myConst.client.phone}
+			no-reply    = {$myConst.client.mails.no-reply}
+			bcc         = {$myConst.client.mails.intern}
+			metaCharset < config.metaCharset
+			charset     = ISO-8859-1
+		}
+
+		previewNote.wrap = <div class="preview-note">|</div>
+
+
+		form {
+			method = {$plugin.tx_advertiser.form.method}
+		}
+
+		use_fakt_basic = {$plugin.tx_advertiser.use_fakt_basic}
+	}
+}

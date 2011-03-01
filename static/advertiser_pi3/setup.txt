@@ -1,0 +1,71 @@
+plugin.tx_advertiser_pi3 {
+	template {
+		file  = EXT:advertiser/res/template/pi3_default.tmpl.html
+		//jslocal =
+	}
+
+	form {
+		method = {$plugin.tx_advertiser.form.method}
+	}
+
+	use_fakt_basic = {$plugin.tx_advertiser.use_fakt_basic}
+
+	stdWrap {
+		allWrap.wrap = <div class="tx-aj-pi3">|</div>
+
+		dwelltime {
+			value = days
+			lang.de = Tage
+			noTrimWrap = | ||
+		}
+		price {
+			noTrimWrap = | (| €%s)|
+		}
+		vat {
+			included {
+				value = %s%% VAT incl.
+				lang.de = inkl. %s%% MwSt.
+				noTrimWrap = | ||
+			}
+			excluded {
+				value = plus %s%% VAT
+				lang.de = zzgl. %s%% MwSt.
+				noTrimWrap = | ||
+			}
+			zerovat {
+				value =
+			}
+		}
+		credit_consumption {
+			singular {
+				value = Credit point
+				lang.de = Kontingentpunkt
+				noTrimWrap = | (%s |)|
+			}
+			plural {
+				value = Credit points
+				lang.de = Kontingentpunkte
+				noTrimWrap = | (%s |)|
+			}
+		}
+	}
+
+		//  ist das hier richtig?
+	options {
+		premium {
+			dwelltime = 45
+		    caption = Top-Positionierung (Aufpreis: %1$s € je %2$d Tage)
+		    sprintf = %01.2f
+			creditconsumption {
+				//  Aufpreis f. gewerblich 0,50 €
+				4 = 0.5
+			}
+			price {
+				//  Aufpreis f. privat 3 €
+				2 = 3
+				//  Aufpreis f. gewerblich 1 €
+				4 = 1
+			}
+		}
+	}
+}

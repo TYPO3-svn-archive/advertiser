@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'advertiser'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_advertiser_ads">Advertisement</label>
+			<label index="tx_advertiser_ads.type.I.0">Bid</label>
+			<label index="tx_advertiser_ads.type.I.1">Request</label>
+			<label index="tx_advertiser_ads.type">Type</label>
+			<label index="tx_advertiser_ads.product_group">Product group</label>
+			<label index="tx_advertiser_ads.manufacturer">Manufacturer</label>
+			<label index="tx_advertiser_ads.div_description">Description</label>
+			<label index="tx_advertiser_ads.title">Indication</label>
+			<label index="tx_advertiser_ads.description">Description</label>
+			<label index="tx_advertiser_ads.category">Category</label>
+			<label index="tx_advertiser_ads.state">State</label>
+			<label index="tx_advertiser_ads.dateofproduction">Date of production</label>
+			<label index="tx_advertiser_ads.warranty">Remaining warranty (in months)</label>
+			<label index="tx_advertiser_ads.div_images">Images</label>
+			<label index="tx_advertiser_ads.image">Photo</label>
+			<label index="tx_advertiser_ads.div_price">Price | Shipping | Payment</label>
+			<label index="tx_advertiser_ads.price">Price</label>
+			<label index="tx_advertiser_ads.vat">VAT included (%)</label>
+			<label index="tx_advertiser_ads.price_option">Price mode</label>
+			<label index="tx_advertiser_ads.shipping">Shipping costs</label>
+			<label index="tx_advertiser_ads.dispatch">Dispatch</label>
+			<label index="tx_advertiser_ads.payment">Payment</label>
+			<label index="tx_advertiser_ads.fe_user">Advertiser</label>
+			<label index="tx_advertiser_ads.premium.I.0">Standard advertisement</label>
+			<label index="tx_advertiser_ads.premium.I.1">Premium advertisement</label>
+			<label index="tx_advertiser_ads.premium">Option</label>
+			<label index="tx_advertiser_ads.sold">sold</label>
+			<label index="tx_advertiser_ads.remaining_term">Remaining term (in days)</label>
+			<label index="tx_advertiser_ads.productlink">Productlink</label>
+			<label index="tx_advertiser_ads.class">Class</label>
+			<label index="tx_advertiser_ads.ispreview">Preview</label>
+
+			<label index="tx_advertiser_manufacturers">Manufacturer</label>
+			<label index="tx_advertiser_manufacturers.title">Manufacturer</label>
+			<label index="tx_advertiser_manufacturers.title_lang_ol">Manufacturer: language overlays</label>
+			<label index="tx_advertiser_manufacturers.image">Logo</label>
+
+			<label index="tx_advertiser_states">State</label>
+			<label index="tx_advertiser_states.title">State</label>
+			<label index="tx_advertiser_states.title_lang_ol">State: language overlays</label>
+
+			<label index="tx_advertiser_productgroups">Product group</label>
+			<label index="tx_advertiser_productgroups.title">Product group</label>
+			<label index="tx_advertiser_productgroups.title_lang_ol">Product group: language overlays</label>
+
+			<label index="tx_advertiser_categories">Category</label>
+			<label index="tx_advertiser_categories.title">Category</label>
+			<label index="tx_advertiser_categories.title_lang_ol">Category: language overlays</label>
+
+			<label index="tx_advertiser_payment">Mode of payment</label>
+			<label index="tx_advertiser_payment.title">Mode of payment</label>
+			<label index="tx_advertiser_payment.title_lang_ol">Mode of payment: language overlays</label>
+
+			<label index="tx_advertiser_dispatch">Mode of dispatch</label>
+			<label index="tx_advertiser_dispatch.title">Dispatch kind</label>
+			<label index="tx_advertiser_dispatch.title_lang_ol">Dispatch kind: language overlays</label>
+
+			<label index="tx_advertiser_price_options">Price options</label>
+			<label index="tx_advertiser_price_options.title">Price option</label>
+			<label index="tx_advertiser_price_options.title_lang_ol">Price option: language overlays</label>
+
+			<label index="tx_advertiser_vat">VAT rate</label>
+			<label index="tx_advertiser_vat.title">Title</label>
+			<label index="tx_advertiser_vat.title_lang_ol">Title: language overlays</label>
+			<label index="tx_advertiser_vat.rate">VAT rate</label>
+			<label index="tx_advertiser_vat.country">Country</label>
+
+			<label index="fe_groups.tx_advertiser_fe_groups_title_lang_ol">Group name: language overlays</label>
+
+			<label index="tx_advertiser_classes">Class</label>
+			<label index="tx_advertiser_classes.title">Title</label>
+			<label index="tx_advertiser_classes.fe_group_access">Advertiser group</label>
+			<label index="tx_advertiser_classes.fe_group_accesstype">Access</label>
+			<label index="tx_advertiser_classes.fe_group_accesstype.I.0">Listing only</label>
+			<label index="tx_advertiser_classes.fe_group_accesstype.I.1">Bid</label>
+			<label index="tx_advertiser_classes.fe_group_accesstype.I.2">Request</label>
+			<label index="tx_advertiser_classes.fe_group_accesstype.I.3">Bid and request</label>
+			<label index="tx_advertiser_classes.dwelltime">Dwell time(s)</label>
+			<label index="tx_advertiser_classes.trialperiod">Trial period (in days)</label>
+			<label index="tx_advertiser_classes.price">Price(s)</label>
+			<label index="tx_advertiser_classes.credit_consumption">Credit consumption</label>
+			<label index="tx_advertiser_classes.credittype">Credit type</label>
+			<label index="tx_advertiser_classes.credittype.I.0">Not available</label>
+			<label index="tx_advertiser_classes.vatincluded">VAT</label>
+			<label index="tx_advertiser_classes.vatincluded.I.0">excluded</label>
+			<label index="tx_advertiser_classes.vatincluded.I.1">included</label>
+			<label index="tx_advertiser_classes.vatincluded.I.2">zero-VAT certificated</label>
+			<label index="tx_advertiser_classes.vatrate">VAT rate (%)</label>
+			<label index="tx_advertiser_classes.template_select">Ads template</label>
+			<label index="tx_advertiser_classes.template_select.I.0">Standard</label>
+			<label index="tx_advertiser_classes.template_select.I.1">Custom file</label>
+			<label index="tx_advertiser_classes.templatefile">Ads template file (XML)</label>
+			<label index="tx_advertiser_classes.infotext">Info text</label>
+			<label index="tx_advertiser_classes.infotext_lang_ol">Info text: language overlays</label>
+			<label index="tx_advertiser_classes.storage_pid">Storage page</label>
+			<label index="tx_advertiser_classes.pages">Startingpoint</label>
+
+			<label index="tx_advertiser_credittypes">Credit type</label>
+			<label index="tx_advertiser_credittypes.title">Title</label>
+
+			<label index="tx_advertiser_sessioncache">Sessioncache</label>
+			<label index="tx_advertiser_sessioncache.ad">Advertisement</label>
+			<label index="tx_advertiser_sessioncache.sessioncontent">Data</label>
+
+
+			<label index="tt_content.list_type_pi1">Ads: Extended single view</label>
+			<label index="tt_content.list_type_pi2">Ads: Supplier's information</label>
+			<label index="tt_content.list_type_pi3">Ads: Form handler</label>
+			<label index="tt_content.list_type_pi4">Ads: Switch to single view</label>
+
+			<label index="fe_users.tx_advertiser_divlabel">Advertiser</label>
+			<label index="fe_users.tx_advertiser_accept_gtc">Terms of use accepted</label>
+			<label index="fe_users.tx_advertiser_merchant">Merchant</label>
+			<label index="fe_users.tx_advertiser_vat_id">Vat ID</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="tx_advertiser_ads">Annonce</label>
+			<label index="tx_advertiser_ads.type.I.0">Exigence</label>
+			<label index="tx_advertiser_ads.type.I.1">Demande</label>
+			<label index="tx_advertiser_ads.type">Type</label>
+			<label index="tx_advertiser_ads.product_group">Groupe de produit</label>
+			<label index="tx_advertiser_ads.manufacturer">Fabricant</label>
+			<label index="tx_advertiser_ads.div_description">Description</label>
+			<label index="tx_advertiser_ads.title">Indication</label>
+			<label index="tx_advertiser_ads.description">Description</label>
+			<label index="tx_advertiser_ads.category">Catégorie</label>
+			<label index="tx_advertiser_ads.state">Etat</label>
+			<label index="tx_advertiser_ads.dateofproduction">Date de production</label>
+			<label index="tx_advertiser_ads.warranty">Garantie restant (au cours des mois)</label>
+			<label index="tx_advertiser_ads.div_images">Graphiques</label>
+			<label index="tx_advertiser_ads.image">Photo</label>
+			<label index="tx_advertiser_ads.div_price">Prix | l'expédition | le paiement</label>
+			<label index="tx_advertiser_ads.price">Prix</label>
+			<label index="tx_advertiser_ads.vat">T.V.A incluse (%)</label>
+			<label index="tx_advertiser_ads.price_option">Mode de prix</label>
+			<label index="tx_advertiser_ads.shipping">Frais d'expédition</label>
+			<label index="tx_advertiser_ads.dispatch">Expédition</label>
+			<label index="tx_advertiser_ads.payment">Paiement</label>
+			<label index="tx_advertiser_ads.fe_user">Annonceur</label>
+			<label index="tx_advertiser_ads.premium.I.0">Annonce de norme</label>
+			<label index="tx_advertiser_ads.premium.I.1">Annonce prime</label>
+			<label index="tx_advertiser_ads.premium">Option</label>
+			<label index="tx_advertiser_ads.sold">vend</label>
+			<label index="tx_advertiser_ads.remaining_term">Durée résiduelle (dans des jours)</label>
+			<label index="tx_advertiser_ads.productlink">Link de produit</label>
+			<label index="tx_advertiser_ads.class">Classe</label>
+			<label index="tx_advertiser_ads.ispreview">Aperçu</label>
+
+			<label index="tx_advertiser_manufacturers">Fabricant</label>
+			<label index="tx_advertiser_manufacturers.title">Fabricant</label>
+			<label index="tx_advertiser_manufacturers.title_lang_ol">Fabricant: Traductions</label>
+			<label index="tx_advertiser_manufacturers.image">Logo</label>
+
+			<label index="tx_advertiser_states">Etat</label>
+			<label index="tx_advertiser_states.title">Etat</label>
+			<label index="tx_advertiser_states.title_lang_ol">Etat: Traductions</label>
+
+			<label index="tx_advertiser_productgroups">Groupe de produit</label>
+			<label index="tx_advertiser_productgroups.title">Groupe de produit</label>
+			<label index="tx_advertiser_productgroups.title_lang_ol">Groupe de produit: Traductions</label>
+
+			<label index="tx_advertiser_categories">Catégorie</label>
+			<label index="tx_advertiser_categories.title">Catégorie</label>
+			<label index="tx_advertiser_categories.title_lang_ol">Catégorie: Traductions</label>
+
+			<label index="tx_advertiser_payment">Manière de paiement</label>
+			<label index="tx_advertiser_payment.title">Manière de paiement</label>
+			<label index="tx_advertiser_payment.title_lang_ol">Manière de paiement: Traductions</label>
+
+			<label index="tx_advertiser_dispatch">Manière d'expédition</label>
+			<label index="tx_advertiser_dispatch.title">Manière d'expédition</label>
+			<label index="tx_advertiser_dispatch.title_lang_ol">Manière d'expédition: Traductions</label>
+
+			<label index="tx_advertiser_price_options">Option de prix</label>
+			<label index="tx_advertiser_price_options.title">Option de prix</label>
+			<label index="tx_advertiser_price_options.title_lang_ol">Option de prix: Traductions</label>
+
+			<label index="tx_advertiser_vat">Taux de TVA</label>
+			<label index="tx_advertiser_vat.title">Indication</label>
+			<label index="tx_advertiser_vat.title_lang_ol">Indication: Traductions</label>
+			<label index="tx_advertiser_vat.rate">Taux de TVA</label>
+
+			<label index="tx_advertiser_classes">Classe</label>
+			<label index="tx_advertiser_classes.title">Indication</label>
+			<label index="tx_advertiser_classes.fe_group_access">Groupe d'annonceur</label>
+			<label index="tx_advertiser_classes.fe_group_accesstype">Accès</label>
+			<label index="tx_advertiser_classes.fe_group_accesstype.I.0">Seulement le listage</label>
+			<label index="tx_advertiser_classes.fe_group_accesstype.I.1">Exigence</label>
+			<label index="tx_advertiser_classes.fe_group_accesstype.I.2">Demande</label>
+			<label index="tx_advertiser_classes.fe_group_accesstype.I.3">Exigence et demande</label>
+			<label index="tx_advertiser_classes.price">Prix</label>
+			<label index="tx_advertiser_classes.use_contingent.I.0">Non disponiblement</label>
+			<label index="tx_advertiser_classes.use_contingent.I.1">Standard</label>
+			<label index="tx_advertiser_classes.use_contingent.I.2">Étendu</label>
+			<label index="tx_advertiser_classes.use_contingent">Contingent</label>
+			<label index="tx_advertiser_classes.dwelltime">Durée pour l'annonce</label>
+			<label index="tx_advertiser_classes.trialperiod">Période d'essai (dans des jours)</label>
+			<label index="tx_advertiser_classes.price">Prix</label>
+			<label index="tx_advertiser_classes.credit_consumption">Consommmation de contingent</label>
+			<label index="tx_advertiser_classes.credittype">Type de crédit</label>
+			<label index="tx_advertiser_classes.credittype.I.0">Non disponiblement</label>
+<!--
+			<label index="tx_advertiser_classes.vatincluded">VAT</label>
+			<label index="tx_advertiser_classes.vatincluded.I.0">excluded</label>
+			<label index="tx_advertiser_classes.vatincluded.I.1">included</label>
+			<label index="tx_advertiser_classes.vatincluded.I.2">zero-VAT certificated</label>
+-->
+			<label index="tx_advertiser_classes.template_select">Annonce gabarit</label>
+			<label index="tx_advertiser_classes.template_select.I.0">Standard</label>
+			<label index="tx_advertiser_classes.template_select.I.1">Propre fichier</label>
+			<label index="tx_advertiser_classes.templatefile">Annonce gabarit fichier (XML)</label>
+			<label index="tx_advertiser_classes.infotext">Texte d'indication</label>
+			<label index="tx_advertiser_classes.infotext_lang_ol">Texte d'indication: Traductions</label>
+			<!-- <label index="tx_advertiser_classes.storage_pid">Storage page</label> -->
+			<label index="tx_advertiser_classes.pages">Point d'entrée</label>
+
+			<label index="tx_advertiser_credittypes">Type de crédit</label>
+			<label index="tx_advertiser_credittypes.title">Indication</label>
+
+			<label index="tx_advertiser_sessioncache">Sessioncache</label>
+			<label index="tx_advertiser_sessioncache.ad">Annonce</label>
+			<label index="tx_advertiser_sessioncache.sessioncontent">Données</label>
+
+
+			<label index="tt_content.list_type_pi1">Ads: Mail au fournisseur</label>
+			<label index="tt_content.list_type_pi2">Ads: Information de fournisseur</label>
+			<label index="tt_content.list_type_pi3">Ads: Formulaire</label>
+			<label index="tt_content.list_type_pi4">Ads: Distributeur à l'avis individuel</label>
+			<label index="fe_users.tx_advertiser_divlabel">Advertiser</label>
+			<label index="fe_users.tx_advertiser_accept_gtc">Conditions d'utilisation accepté</label>
+			<label index="fe_users.tx_advertiser_merchant">Marchand</label>
+			<label index="fe_users.tx_advertiser_vat_id">Numéro d'identification de T.V.A.</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_advertiser_ads">Inserat</label>
+			<label index="tx_advertiser_ads.type.I.0">Verkauf</label>
+			<label index="tx_advertiser_ads.type.I.1">Ankauf</label>
+			<label index="tx_advertiser_ads.type">Typ</label>
+			<label index="tx_advertiser_ads.product_group">Produktgruppe</label>
+			<label index="tx_advertiser_ads.manufacturer">Hersteller</label>
+			<label index="tx_advertiser_ads.div_description">Beschreibung</label>
+			<label index="tx_advertiser_ads.title">Modellbezeichung</label>
+			<label index="tx_advertiser_ads.description">Beschreibung</label>
+			<label index="tx_advertiser_ads.category">Kategorie</label>
+			<label index="tx_advertiser_ads.state">Zustand</label>
+			<label index="tx_advertiser_ads.dateofproduction">Herstellungsdatum</label>
+			<label index="tx_advertiser_ads.warranty">Verbleibende Garantie (in Monaten)</label>
+			<label index="tx_advertiser_ads.div_images">Grafiken</label>
+			<label index="tx_advertiser_ads.image">Foto</label>
+			<label index="tx_advertiser_ads.div_price">Preis | Versand | Zahlung</label>
+			<label index="tx_advertiser_ads.price">Preis</label>
+			<label index="tx_advertiser_ads.vat">enthaltene USt (%)</label>
+			<label index="tx_advertiser_ads.price_option">Preismodus</label>
+			<label index="tx_advertiser_ads.shipping">Versandkosten</label>
+			<label index="tx_advertiser_ads.dispatch">Versand</label>
+			<label index="tx_advertiser_ads.payment">Zahlung</label>
+			<label index="tx_advertiser_ads.fe_user">Inserent</label>
+			<label index="tx_advertiser_ads.premium.I.0">Standardinserat</label>
+			<label index="tx_advertiser_ads.premium.I.1">Premiuminserat</label>
+			<label index="tx_advertiser_ads.premium">Option</label>
+			<label index="tx_advertiser_ads.sold">verkauft</label>
+			<label index="tx_advertiser_ads.remaining_term">Restlaufzeit (in Tagen)</label>
+			<label index="tx_advertiser_ads.productlink">Produktlink</label>
+			<label index="tx_advertiser_ads.class">Klasse</label>
+			<label index="tx_advertiser_ads.ispreview">Vorschau</label>
+
+			<label index="tx_advertiser_manufacturers">Hersteller</label>
+			<label index="tx_advertiser_manufacturers.title">Hersteller</label>
+			<label index="tx_advertiser_manufacturers.title_lang_ol">Hersteller: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+			<label index="tx_advertiser_manufacturers.image">Logo</label>
+
+			<label index="tx_advertiser_states">Zustand</label>
+			<label index="tx_advertiser_states.title">Zustand</label>
+			<label index="tx_advertiser_states.title_lang_ol">Zustand: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+
+			<label index="tx_advertiser_productgroups">Produktgruppe</label>
+			<label index="tx_advertiser_productgroups.title">Produktgruppe</label>
+			<label index="tx_advertiser_productgroups.title_lang_ol">Produktgruppe: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+
+			<label index="tx_advertiser_categories">Kategorie</label>
+			<label index="tx_advertiser_categories.title">Kategorie</label>
+			<label index="tx_advertiser_categories.title_lang_ol">Kategorie: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+
+			<label index="tx_advertiser_payment">Zahlungsweise</label>
+			<label index="tx_advertiser_payment.title">Zahlungsweise</label>
+			<label index="tx_advertiser_payment.title_lang_ol">Zahlungsweise: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+
+			<label index="tx_advertiser_dispatch">Versandart</label>
+			<label index="tx_advertiser_dispatch.title">Versandart</label>
+			<label index="tx_advertiser_dispatch.title_lang_ol">Versandart: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+
+			<label index="tx_advertiser_price_options">Preisoption</label>
+			<label index="tx_advertiser_price_options.title">Preisoption</label>
+			<label index="tx_advertiser_price_options.title_lang_ol">Preisoption: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+
+			<label index="tx_advertiser_vat">Mehrwertsteuersatz</label>
+			<label index="tx_advertiser_vat.title">Bezeichnung</label>
+			<label index="tx_advertiser_vat.title_lang_ol">Bezeichnung: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+			<label index="tx_advertiser_vat.rate">Mehrwertsteuersatz</label>
+			<label index="tx_advertiser_vat.country">Land</label>
+
+			<label index="fe_groups.tx_advertiser_fe_groups_title_lang_ol">Gruppenname: Übersetzungen (mehrere Einträge durch &amp;quot;|&amp;quot; trennen)</label>
+
+			<label index="tx_advertiser_classes">Klasse</label>
+			<label index="tx_advertiser_classes.title">Bezeichnung</label>
+			<label index="tx_advertiser_classes.fe_group_access">Inserentengruppe</label>
+			<label index="tx_advertiser_classes.fe_group_accesstype">Zugriff</label>
+			<label index="tx_advertiser_classes.fe_group_accesstype.I.0">Nur Auflistung</label>
+			<label index="tx_advertiser_classes.fe_group_accesstype.I.1">Angebot</label>
+			<label index="tx_advertiser_classes.fe_group_accesstype.I.2">Gesuch</label>
+			<label index="tx_advertiser_classes.fe_group_accesstype.I.3">Angebot und Gesuch</label>
+			<label index="tx_advertiser_classes.dwelltime">Laufzeit(en)</label>
+			<label index="tx_advertiser_classes.trialperiod">Testphase (in Tagen)</label>
+			<label index="tx_advertiser_classes.price">Preis(e)</label>
+			<label index="tx_advertiser_classes.credit_consumption">Guthabenverbrauch</label>
+			<label index="tx_advertiser_classes.credittype">Guthabentyp</label>
+			<label index="tx_advertiser_classes.credittype.I.0">Nicht verfügbar</label>
+			<label index="tx_advertiser_classes.vatincluded">MwSt</label>
+			<label index="tx_advertiser_classes.vatincluded.I.0">zuzüglich</label>
+			<label index="tx_advertiser_classes.vatincluded.I.1">inklusive</label>
+			<label index="tx_advertiser_classes.vatincluded.I.2">USt.-befreit</label>
+			<label index="tx_advertiser_classes.vatrate">MwSt-Satz (%)</label>
+			<label index="tx_advertiser_classes.template_select.I.0">Standard</label>
+			<label index="tx_advertiser_classes.template_select.I.1">Benutzerdefinierte Datei</label>
+			<label index="tx_advertiser_classes.template_select">Inseratsvorlage</label>
+			<label index="tx_advertiser_classes.templatefile">Inseratsvorlage (XML)</label>
+			<label index="tx_advertiser_classes.infotext">Hinweistext</label>
+			<label index="tx_advertiser_classes.infotext_lang_ol">Hinweistext: Übersetzungen (mehrere Einträge durch &quot;|&quot; trennen)</label>
+			<label index="tx_advertiser_classes.storage_pid">Ablage für neue Inserate</label>
+			<label index="tx_advertiser_classes.pages">Ausgangspunkt</label>
+			<label index="tx_advertiser_credittypes">Guthabentyp</label>
+			<label index="tx_advertiser_credittypes.title">Bezeichnung</label>
+
+			<label index="tx_advertiser_sessioncache">Sessioncache</label>
+			<label index="tx_advertiser_sessioncache.ad">Inserat</label>
+			<label index="tx_advertiser_sessioncache.sessioncontent">Daten</label>
+
+
+			<label index="tt_content.list_type_pi1">Ads: Erweiterte Einzelansicht</label>
+			<label index="tt_content.list_type_pi2">Ads: Bilderupload</label>
+			<label index="tt_content.list_type_pi3">Ads: Formular</label>
+			<label index="tt_content.list_type_pi4">Ads: Verteiler zu Einzelansicht</label>
+
+			<label index="fe_users.tx_advertiser_divlabel">Inserenten</label>
+			<label index="fe_users.tx_advertiser_accept_gtc">Nutzungsbedingungen akzeptiert</label>
+			<label index="fe_users.tx_advertiser_merchant">Händler</label>
+			<label index="fe_users.tx_advertiser_vat_id">USt.-ID</label>
+		</languageKey>
+	</data>
+</T3locallang>

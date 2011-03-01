@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description>CSH for table tx_advertiser_classes</description>
+        <type>CSH</type>
+        <csh_table>tx_advertiser_classes</csh_table>
+        <fileId>EXT:advertiser/res/locallang/locallang_tx_advertiser_classes_csh.xml</fileId>
+    </meta>
+
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index=".description">Kleinanzeigenmanager für TYPO3.</label>
+            <label index=".details">„Klassen” ermöglichen es, Formulare für das Aufgeben von Inseraten unterschiedlich zu gestalten und für verschiedene Benutzergruppen (Inserentengruppen) freizugeben.</label>
+
+            <label index="title.description">Geben Sie ein Bezeichnung für diese Klasse von Inseraten ein.</label>
+            <label index="title.details">Die Bezeichnung wird angezeigt, wenn ein Inserent ein neues Inserat einstellt. Anhand dessen kann er auswählen, welche Art Inserat er aufgeben kann.</label>
+            <label index="fe_group_access.description">Wählen Sie aus, für welche Benutzergruppe (Inserentengruppe) diese Klasse verfügbar ist.</label>
+            <label index="fe_group_access.details"></label>
+            <label index="fe_group_accesstype.description">Wählen Sie aus, ob diese Klasse von der angegebenen Benutzergruppe (Inserentengruppe) verwendet werden darf.</label>
+            <label index="fe_group_accesstype.details"><![CDATA[• <b>Nur Auflistung:</b>
+In der Übersicht wird diese Klasse angezeigt.
+Wählt der Inserent diese aus, wird der angegebene Infotext statt des Eingabeformulars angezeigt.
+• <b>Auflistung und Benutzung:</b>
+Standard.
+In der Übersicht wird diese Klasse angezeigt.
+Wählt der Inserent diese aus, wird das Eingabeformular angezeigt.
+• <b>Angebot:</b>
+Inserate dieser Klasse sind ausschließlich als Angebot verfügbar.
+• <b>Gesuch:</b>
+Inserate dieser Klasse sind ausschließlich als Gesuch verfügbar.
+• <b>Angebot und Gesuch:</b>
+Inserate dieser Klasse sind sowohl als Angebot als auch Gesuch verfügbar.]]></label>
+            <label index="infotext.description">Geben Sie hier einen Hinweistext ein – er wird dem Inserenten angezeigt, wenn er eine Inserateklasse mit der Eigenschaft „Nur Auflistung” auswählt.</label>
+            <label index="infotext.details">Hilfreich ist z. B. der Hinweis, warum diese Klasse für ihn nicht zur Verfügung steht bzw. unter welchen Bedinungen er diese nutzen könnte.</label>
+            <label index="infotext_lang_ol.description">Geben Sie Übersetzungen nach dem Muster [Sprachkürzel]:[Text]|[Sprachkürzel]:[Text] ein.</label>
+            <label index="infotext_lang_ol.details"><![CDATA[<b>Beispiel:</b>
+• Hinweistext:
+<i>Dieses Inserat steht nur Händlern zur Verfügung</i>
+• Übersetzungen:
+<i>en:This advertisement is available only to merchants|fr:Cette annonce est à la disposition seulement des marchands</i>]]></label>
+            <label index="dwelltime.description">Geben Sie die für diese Klasse erlaubten Laufzeiten (in Tagen) an. Verwenden Sie für jede Laufzeit eine eigene Zeile.</label>
+            <label index="dwelltime.details"></label>
+            <label index="price.description">Geben Sie für jede Laufzeit den entsprechenden Preis an. Verwenden Sie für jeden Preis eine eigene Zeile (Reihenfolge entsprechend „Laufzeiten”).
+Tragen Sie „0” ein, wenn Inserate dieser Klasse für die entsprechende Laufzeit kostenlos sein sollen.
+Tragen Sie „” (Leerzeile) ein, wenn Inserate dieser Klasse für die entsprechende Laufzeit nur per Guthaben bezahlt werden sollen.</label>
+            <label index="price.details"></label>
+            <label index="credit_consumption.description">Geben Sie für jede Laufzeit den entsprechenden Guthabenverbrauch an. Verwenden Sie für jeden Guthabenverbrauch eine eigene Zeile (Reihenfolge entsprechend „Laufzeiten”).
+Tragen Sie „” (Leerzeile) ein, wenn Inserate dieser Klasse für die entsprechende Laufzeit nicht per Guthaben bezahlt werden sollen.</label>
+            <label index="credit_consumption.details"></label>
+            <label index="credittype.description"><![CDATA[• „Nicht verfügbar”:
+Inserate dieser Klasse können nicht per Guthaben bezahlt werden. Es wird nur der der gewählten Laufzeit entsprechende Preis angezeigt und akzeptiert.
+• [Andere]:
+Inserate dieser Klasse können aus dem gewählten Guthaben bezahlt werden.
+Voraussetzung: Guthabentypen müssen vorher angelegt werden.]]></label>
+            <label index="credittype.details">Wählen Sie aus, ob Inserate dieser Klasse per Guthaben bezahlt werden können bzw. welche Art Guthaben dafür erforderlich ist.</label>
+			<label index="storage_pid.description">In dieser Seite / Sysordner wird ein neues Inserat dieser Klasse abgelegt.</label>
+			<label index="storage_pid.details"></label>
+            <label index="template_select.description">Wählen Sie aus, ob Sie die Standardvorlagen oder eine eigene Vorlage verwenden möchten.</label>
+<!--
+			<label index="template_select.details"></label>
+            <label index="templatefile.description"></label>
+            <label index="templatefile.details"></label>
+-->
+        </languageKey>
+    </data>
+</T3locallang>

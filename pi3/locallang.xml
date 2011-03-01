@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_advertiser_pi3&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="stepinfotext1">Step 1 – please select:</label>
+			<label index="classheader">Ads category</label>
+			<label index="stepinfotext2">Step 2 – please fill in ads data:</label>
+			<label index="stepinfotext2title">Ads category: %s</label>
+			<label index="infonextstepeditimages">In the next step you can add images.</label>
+			<label index="inforequiredfields"><![CDATA[Fields marked with <span class="detail">*</span> are mandatory fields.]]></label>
+			<label index="trialcaption">%d days (free trial)</label>
+			<label index="notapplicable">n/a</label>
+
+			<label index="submitvalue1">Continue</label>
+
+			<label index="type">Ads type</label>
+			<label index="type.I.0">Bid</label>
+			<label index="type.I.1">Request</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="stepinfotext1">Schritt 1 – bitte wählen Sie aus:</label>
+			<label index="classheader">Anzeigenkategorie</label>
+			<label index="stepinfotext2">Schritt 2 – geben Sie die Inseratsdaten ein:</label>
+			<label index="stepinfotext2title">Anzeigenkategorie: %s</label>
+			<label index="infonextstepeditimages">Im folgenden Schritt können Sie Fotos zu Ihrem Inserat ergänzen.</label>
+			<label index="inforequiredfields"><![CDATA[Die mit <span class="detail">*</span> markierten Felder sind Pflichtfelder.]]></label>
+			<label index="trialcaption">%d Tage (kostenfreie Probezeit)</label>
+			<label index="notapplicable">K. A.</label>
+
+			<label index="submitvalue1">Weiter</label>
+
+			<label index="typeheader">Anzeigentyp</label>
+			<label index="type.I.0">Biete</label>
+			<label index="type.I.1">Suche</label>
+		</languageKey>
+	</data>
+</T3locallang>

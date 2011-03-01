@@ -1,0 +1,151 @@
+plugin.tx_browser_pi1 {
+	template {
+		file = EXT:advertiser/res/template/default_ul.tmpl
+	}
+
+	autoconfig {
+		autoDiscover {
+			items {
+				title {
+					TCAlabel {
+						csvValue = title, issue
+					}
+				}
+				timestamp {
+					TCAlabel {
+						csvValue = datetime, starttime, endtime, datefrom
+					}
+				}
+			}
+		}
+	}
+
+	a-z_Browser {
+		defaultTab = Alle
+		tabs {
+			0 = Alle
+			2 {
+				valuesCSV = A, Ä, ä
+			}
+			16 {
+				valuesCSV = O, Ö, ö
+			}
+			19 {
+				valuesCSV = S, ß
+			}
+			21 {
+				valuesCSV = U, Ü, ü
+			}
+			25 = Andere
+		}
+	}
+
+	pageBrowser {
+		maxPages          = 8
+		results_at_a_time = 20
+	}
+
+	views {
+		list {
+			1 {
+				select = tx_advertiser_ads.title
+				##search = tx_juridat_pi1.reg_num,tx_juridat_pi1.issue,tx_juridat_pi1.source,tx_juridat_pi1.norm,tx_juridat_pi1.e,tx_juridat_pi1.datefrom,tx_juridat_pi1.author,tx_juridat_pi1.reference,tx_juridat_pi1.djvcase,tx_juridat_pi1.citation,tx_juridat_pi1.headnote
+			}
+		}
+		single {
+			1 {
+				displaySingle < plugin.tx_browser_pi1.displaySingle
+				displaySingle {
+					templateMarker = ###TEMPLATE_SINGLE_IMGTXT###
+					display {
+						backbutton = 0
+					}
+				}
+				select = tx_juridat_pi1.reg_num, tx_juridat_pi1.issue, tx_juridat_pi1.source, tx_juridat_pi1.norm, tx_juridat_pi1.e, tx_juridat_pi1.datefrom, tx_juridat_pi1.author, tx_juridat_pi1.reference, tx_juridat_pi1.djvcase, tx_juridat_pi1.citation, tx_juridat_pi1.headnote
+				handleAs {
+					text = tx_juridat_pi1.headnote
+				}
+			}
+		}
+	}
+
+	_LOCAL_LANG {
+		de {
+			back	= Zurück zur Übersicht
+
+			pi_list_browseresults_prev     = <
+			pi_list_browseresults_first    = <<
+			pi_list_browseresults_next     = >
+			pi_list_browseresults_last     = >>
+			pi_list_browseresults_displays = %s bis %s von %s Einträgen
+		}
+	}
+
+	_CSS_DEFAULT_STYLE (
+		.tx-browser-pi1 div.azSelector,
+		.tx-browser-pi1 div.modeSelector {
+			padding:.4em 0;
+			height:1.4em;
+		}
+		.tx-browser-pi1 ul.azSelector,
+		.tx-browser-pi1 ul.modeSelector {
+			max-width: 100%;
+			margin: 0;
+			padding: 0;
+			font-size:1em;
+			height:1.4em;
+			background:#EEE;
+		}
+		* html .tx-browser-pi1 ul.azSelector,
+		* html .tx-browser-pi1 ul.modeSelector {
+			width: 100%;
+		}
+		.tx-browser-pi1 ul.azSelector li,
+		.tx-browser-pi1 ul.modeSelector li {
+			display: block;
+			margin: 0;
+			padding: 1px 3px;
+			float: left;
+			border-right:1px solid grey;
+		}
+		.tx-browser-pi1 ul.azSelector li.last,
+		.tx-browser-pi1 ul.modeSelector li.last {
+			border-right:0;
+		}
+		.tx-browser-pi1 ul.azSelector li.selected,
+		.tx-browser-pi1 ul.modeSelector li.selected {
+			background:white;
+			font-weight:bold;
+		}
+
+		.tx-browser-pi1 .listview	{
+			padding:1em 1em 1em 0;
+		}
+		.tx-browser-pi1 .singleview table {
+			border: 1px solid #DDD;
+			border-bottom:0;
+			text-align:left;
+		}
+		.tx-browser-pi1 .singleview table tr {
+			background:white;
+		}
+		.tx-browser-pi1 .singleview table tr.odd {
+			background:#DDD;
+		}
+		.tx-browser-pi1 .singleview table th {
+			border-right: 1px solid #DDD;
+		}
+		.tx-browser-pi1 .singleview table th,
+		.tx-browser-pi1 .singleview table td {
+			border-bottom: 1px solid #DDD;
+			padding:0 1em 0 .2em;
+		}
+		.tx-browser-pi1 .singleview .text {
+			padding:0 0 1em 0;
+		}
+		.tx-browser-pi1 .singleview .backbutton {
+			text-align:right;
+			padding:1em 0 0 0;
+		}
+	)
+}

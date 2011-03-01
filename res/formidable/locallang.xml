@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_advertiser_pi3&quot;, used in tx_formidable</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="label.element.start">Start date</label>
+			<label index="label.element.product_profil">Profile</label>
+			<label index="label.element.premium.I.1">Top position (additional fee)</label>
+			<label index="label.element.submit">Next</label>
+
+			<label index="label.element.image1">Image 1</label>
+			<label index="label.element.image2">Image 2</label>
+			<label index="label.element.image3">Image 3</label>
+			<label index="label.element.image4">Image 4</label>
+			<label index="label.element.image5">Image 5</label>
+			<label index="label.element.image6">Image 6</label>
+
+			<label index="tx_advertiser_ads.type">Ads type</label>
+			<label index="tx_advertiser_ads.type.I.0">Bid</label>
+			<label index="tx_advertiser_ads.type.I.1">Request</label>
+			<label index="tx_advertiser_ads.article">Article</label>
+
+			<label index="message.valid.starttime">Start date must be now or in future!</label>
+			<label index="message.required.type">Please choose an ads type!</label>
+			<label index="message.required.dwelltime">Please choose a dwell time!</label>
+			<label index="message.required.product_group">Please choose a product group!</label>
+			<label index="message.required.product_profil">Please choose a profile!</label>
+			<label index="message.required.manufacturer">Please choose a manufacturer!</label>
+			<label index="message.required.category">Please choose a category!</label>
+			<label index="message.required.state">Please choose a state!</label>
+			<label index="message.required.title">Please insert an indication!</label>
+			<label index="message.required.description">Please insert a description!</label>
+			<label index="message.required.price">Please insert a price!</label>
+			<label index="message.required.price_option">Please choose a price mode!</label>
+			<label index="message.required.payment">Please check at least one payment method!</label>
+			<label index="message.required.shipping">Please insert the shipping costs!</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="label.element.start">Startdatum</label>
+			<label index="label.element.product_profil">Bereich</label>
+			<label index="label.element.premium.I.1">Top-Positionierung (Aufpreis)</label>
+			<label index="label.element.submit">Weiter</label>
+
+			<label index="label.element.image1">Foto 1</label>
+			<label index="label.element.image2">Foto 2</label>
+			<label index="label.element.image3">Foto 3</label>
+			<label index="label.element.image4">Foto 4</label>
+			<label index="label.element.image5">Foto 5</label>
+			<label index="label.element.image6">Foto 6</label>
+
+			<label index="tx_advertiser_ads.type">Anzeigentyp</label>
+			<label index="tx_advertiser_ads.type.I.0">Verkauf</label>
+			<label index="tx_advertiser_ads.type.I.1">Ankauf</label>
+			<label index="tx_advertiser_ads.article">Artikel</label>
+
+			<label index="message.valid.starttime">Das Startdatum darf nicht in der Vergangenheit liegen.</label>
+			<label index="message.required.type">Bitte wählen Sie einen Anzeigentyp aus!</label>
+			<label index="message.required.dwelltime">Bitte wählen Sie eine Laufzeit aus!</label>
+			<label index="message.required.product_group">Bitte wählen Sie eine Produktgruppe aus!</label>
+			<label index="message.required.product_profil">Bitte wählen Sie einen Bereich aus!</label>
+			<label index="message.required.manufacturer">Bitte wählen Sie den Hersteller aus!</label>
+			<label index="message.required.category">Bitte wählen Sie eine passende Kategorie aus!</label>
+			<label index="message.required.state">Bitte wählen Sie einen zutreffenden Zustand aus!</label>
+			<label index="message.required.title">Bitte geben Sie eine Bezeichnung an!</label>
+			<label index="message.required.description">Bitte füllen Sie die Beschreibung aus!</label>
+			<label index="message.required.price">Bitte geben Sie einen Preis an!</label>
+			<label index="message.required.price_option">Bitte wählen Sie einen Preismodus aus!</label>
+			<label index="message.required.vat">Bitte geben Sie an, ob und in welcher Höhe Umsatzsteuer enthalten ist!</label>
+			<label index="message.required.payment">Bitte geben Sie mindestens eine Zahlungsweise an!</label>
+			<label index="message.required.shipping">Bitte geben Sie die Versandkosten an!</label>
+		</languageKey>
+	</data>
+</T3locallang>

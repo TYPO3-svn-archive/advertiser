@@ -1,0 +1,23 @@
+    # cat=basic/enable/10; type = boolean; label = DRS - Development Reporting System: Infos, Warnings, Errors etc.: These messages will be written to DevLog (you need the extension devlog), set favoured severity below.
+log_on = 0
+
+    # cat=basic/enable/20; type = options[Log errors only = 3, Log warnings too = 2, Log notices too = 1, Log infos too = 0, Log messages too (log all) = -1]; label = DRS - Development Reporting System: Severity of Logging. This selection will only take effect if logging is enabled beforehand.
+log_mode = 0
+
+    # cat=basic/enable/30; type = options[No captcha installed = 0, freeCap CAPTCHA [sr_freecap] = 1]; label = Use capcha Extension
+captcha = 0
+
+    # cat=basic/file/10; type=boolean; label=Use references to XML config files: Instead of making a copy: If set, the XML config files will not be copied to /uploads/tx_advertiser/ anymore. Instead a direct reference to the original file is stored. If the original file is modified, the changes will take effect instantly without the need to remap the template. Be aware at porting your TYPO3 installation to another environment mostly you have to re-bind the XML config files in the plugin configuration.
+useReference = 1
+
+	# cat = basic/file/20;   type = boolean; label = Include JavaScript libraries: Load the prototype/ scriptaculous libraries. Unceck it to avoid double loading.
+includeScriptaculous = 1
+
+	# cat = basic/file/30;   type = string; label = Path to prototype
+pathPrototype = /contrib/prototype/prototype.js
+
+	# cat = basic/file/40;   type = string; label = Path to scriptaculous
+pathScriptaculous = /contrib/scriptaculous/scriptaculous.js?load=effects,slider
+
+	# cat = basic//10;   type = string; label = Default VAT rate
+defaultVatRate = 19.0

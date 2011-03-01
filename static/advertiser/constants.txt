@@ -1,0 +1,47 @@
+plugin.tx_advertiser_pi1 {
+		# cat = plugin.tx_advertiser/enable/10;	type = boolean; label = Display other ads: Used in extended single view. If the advertiser hss more than one ad there can be a link to an list of all ads of this advertiser. Turns it on.
+	displayOtherAds = 1
+
+		# cat = plugin.tx_advertiser/enable/20;	type = boolean; label = Display a mail form: Used in extended single view. Displays a form whereby site visitor can come in contact with the vendor. Turns it on.
+	displayMailForm = 1
+
+
+		# cat = plugin.tx_advertiser//20;    type = int+;    label = Value added tax rate: regular rate of your country in percent (default value, used if in advertisement record nothing is specified)
+	stdTaxRate = 19
+
+
+		# cat = plugin.tx_advertiser/dims/10;	type=int+;	label = Single view first image max height: Max width for the first image displayed in a single view
+	imagefirstMaxH  = 150
+		# cat = plugin.tx_advertiser/dims/20;	type=int+;	label = Single view first image max width: Max width for the first image displayed in a single view
+	imagefirstMaxW  = 100
+		# cat = plugin.tx_advertiser/dims/30;	type=int+;	label = Single view following images max height: Max width for other images displayed in a single view
+	imagefollowMaxH = 75
+		# cat = plugin.tx_advertiser/dims/40;	type=int+;	label = Single view following images max width: Max width for other images displayed in a single view
+	imagefollowMaxW = 50
+		# cat = plugin.tx_advertiser/dims/50;	type=int+;	label = Vendor logo max height: Max width for an image displayed in a single view
+	imagelogoMaxH   = 250
+		# cat = plugin.tx_advertiser/dims/60;	type=int+;	label = Vendor logo max width: Max width for an image displayed in a single view
+	imagelogoMaxW   = 100
+
+
+		# cat = plugin.tx_advertiser/links/10;	type=int+;	label = List page id: id of the page displaying all ads of a certain advertiser
+	listPid  = 0
+		# cat = plugin.tx_advertiser/links/20;	type=int+;	label = Edit page id: id of the page containing the for editing an ad
+	editPid  = 0
+		# cat = plugin.tx_advertiser/links/30;	type=int+;	label = User list page id: id of the page displaying all ads of an advertiser after login as fe user (to administrate them itself)
+	userListPid  = 0
+}
+
+plugin.tx_advertiser {
+		# cat = plugin.tx_advertiser//10;	type = int+;	label = Dwell time: default display duration of advertisements (in days)
+	dwelltime = 30
+
+
+	form {
+			# cat = plugin.tx_advertiser_pi3/links/10;	type = options[Uebertragung mit GET = get, Uebertragung mit POST = post]; label = Formular: Sendemethode
+		method = post
+	}
+
+	    # cat=plugin.tx_advertiser_pi3/enable/10; type = boolean; label = Use Fakt Basic: If set functionality of Fakt Basic is used
+	use_fakt_basic = 0
+}

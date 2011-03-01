@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>language labels for pi3 FlexForm fields</description>
+		<type>database</type>
+		<csh_table></csh_table>
+		<fileId>EXT:advertiser/pi3/locallang_pi3.xml</fileId>
+		<labelContext type="array">
+		</labelContext>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="flexform.config.xml_file.select">Form from selection</label>
+			<label index="flexform.config.xml_file.select.0">Ad market place</label>
+			<label index="flexform.config.xml_file.select.1">Ad rentig</label>
+			<label index="flexform.config.xml_file.select.2">Ad service</label>
+			<label index="flexform.config.xml_file.select.3">Ad creatives</label>
+			<label index="flexform.config.xml_file.select.4">Ad images</label>
+			<label index="flexform.config.xml_file.upload">Form config file (XML), ignores selecteion above</label>
+		</languageKey>
+
+		<languageKey index="de" type="array">
+			<label index="flexform.config.xml_file.select">Formular aus Auswahl</label>
+			<label index="flexform.config.xml_file.select.0">Inserat Marktplatz</label>
+			<label index="flexform.config.xml_file.select.1">Inserat Verleih</label>
+			<label index="flexform.config.xml_file.select.2">Inserat Dienstleister</label>
+			<label index="flexform.config.xml_file.select.3">Inserat Kreative</label>
+			<label index="flexform.config.xml_file.select.4">Inserat Grafiken</label>
+			<label index="flexform.config.xml_file.upload">Konfigurationsdatei für Formular (XML), ignoriert vorstehende Auswahl</label>
+		</languageKey>
+
+		<languageKey index="fr" type="array">
+			<label index="flexform.config.xml_file.upload">Fichier de configuration pour le formulaire (XML), si le choix précédent ignore</label>
+		</languageKey>
+	</data>
+</T3locallang>

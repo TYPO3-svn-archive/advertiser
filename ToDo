@@ -1,0 +1,26 @@
+Inserat wieder bearbeiten:
+    Session löschen
+
+function sessionCacheInsert():
+    Möglichkeit ergänzen pid auszuwählen (GRSP o. TS setup)
+
+Methoden pi3/pi4:
+    function setStatus($currentRecord) {} doppelt...
+
+Inserat aufgeben ()
+	Texte
+		Die mit * markierten Felder sind Pflichtfelder.
+		Inserat auf Foto (Ankauf)
+		--
+		Im folgenden Schritt können Sie Fotos zu Ihrem Inserat ergänzen.
+	in Plugin integrieren (erübrigt Anlegen CE)
+
+Typoscript:
+	-   D:\htdocs\156kameramarktplatz.de\TS\Plugins\+plugin_advertiser_general_22.setup.ts
+		Übernahme in static prüfen
+		
+Locallang in xml (property.property abfangen)
+
+
+Localization
+	-   see \typo3conf\ext\browser\pi1\class.tx_browser_pi1_localization.php:606

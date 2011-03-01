@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<formidable version="0.7.160"
+	xmlns:datahandler="http://www.ameos.com/formidable/0.7.160/datahandler"
+	xmlns:datasource="http://www.ameos.com/formidable/0.7.160/datasource"
+	xmlns:renderer="http://www.ameos.com/formidable/0.7.160/renderer"
+	xmlns:renderlet="http://www.ameos.com/formidable/0.7.160/renderlet"
+	xmlns:validator="http://www.ameos.com/formidable/0.7.160/validator"
+	xmlns:actionlet="http://www.ameos.com/formidable/0.7.160/actionlet">
+
+	<meta>
+		<name>real-life CRUD example</name>
+		<form formid="myform"/>
+		<debug>false</debug>
+		<displaylabels>true</displaylabels>
+	</meta>
+
+	<control>
+		<datahandler:DB>
+			<tablename>pages</tablename>
+			<keyname>uid</keyname>
+			<process>
+				<beforeInsertion>
+					<userobj>
+						<php><![CDATA[/*<?*/
+
+							$aData = $this->getUserObjParams();
+
+							// Inserting sysfields in array going to DB
+
+							if($this->oDataHandler->_creation()) {
+								$aData["crdate"] = time();
+								$aData["pid"] = $GLOBALS["TSFE"]->id;
+								$aData["cruser_id"] = $GLOBALS["TSFE"]->fe_user->user["uid"];
+							}
+
+							$aData["tstamp"] = time();
+
+							return $aData;
+
+						/*?>*/]]></php>
+					</userobj>
+				</beforeInsertion>
+			</process>
+		</datahandler:DB>
+
+		<renderer:STANDARD/>
+
+		<datasources>
+			<datasource:DB name="ds-pages">
+				<sql>SELECT * from pages</sql>
+			</datasource:DB>
+		</datasources>
+
+		<sandbox>
+			<userobj>
+				<php><![CDATA[/*<?*/
+
+					// reusable methods to be used everywhere in xml thru call to $this->oSandBox
+						// the sandbox can also hold properties as it is an object
+						// will also be available and persisted in ajax context, if needed
+
+					function shouldDisplayForm() {
+						return (
+							$this->oForm->aORenderlets["btn-new"]->_hasThrown("click") ||
+							$this->oForm->aORenderlets["btn-save"]->_hasThrown("click") ||
+							$this->oForm->oDataHandler->_edition()
+						);
+					}
+
+					function shouldDisplayList() {
+						return !$this->shouldDisplayForm();
+					}
+
+				/*?>*/]]></php>
+			</userobj>
+		</sandbox>
+	</control>
+
+	<elements>
+
+		<!-- the button NEW, submit mode is CLEAR -->
+		<renderlet:SUBMIT name="btn-new" label="New" mode="clear" />
+
+
+		<!-- the LISTER boud to datasource pages, whose display is conditionned -->
+		<renderlet:LISTER name="my-list">
+			<process>
+				<userobj>
+					<php><![CDATA[/*<?*/
+
+						return $this->oSandBox->shouldDisplayList();
+
+					/*?>*/]]></php>
+				</userobj>
+			</process>
+			<datasource use="ds-pages" />
+			<pager>
+				<sort column="tstamp" direction="desc" />
+			</pager>
+			<columns>
+				<column type="renderlet:TEXT" name="title" listHeader="Title" />
+				<column type="renderlet:DATE" name="tstamp" listHeader="Modification"/>
+				<column type="renderlet:BUTTON" name="btn-edit" listHeader="" label="Edit">
+					<onclick runat="client">
+						<userobj>
+							<php><![CDATA[/*<?*/
+
+								$aRow = $this->oDataHandler->getListData();
+								return $this->majixRequestEdition($aRow["uid"]);
+
+							/*?>*/]]></php>
+						</userobj>
+					</onclick>
+				</column>
+			</columns>
+		</renderlet:LISTER>
+
+		<!-- the EDIT/CREATE FORM container -->
+		<renderlet:BOX name="edition-box">
+			<process>
+				<userobj>
+					<php><![CDATA[/*<?*/
+
+						return $this->oSandBox->shouldDisplayForm();
+
+					/*?>*/]]></php>
+				</userobj>
+			</process>
+			<childs>
+				<renderlet:BOX mode="h2">
+					<html>
+						<userobj>
+							<php><![CDATA[/*<?*/
+
+								if($this->oDataHandler->_edition()) {
+									return "Edit page";
+								} else {
+									return "Create page";
+								}
+
+							/*?>*/]]></php>
+						</userobj>
+					</html>
+				</renderlet:BOX>
+
+				<renderlet:TEXT name="title" label="Title">
+					<validators>
+						<validator:STANDARD>
+							<required message="Title is required" />
+						</validator:STANDARD>
+					</validators>
+				</renderlet:TEXT>
+
+				<renderlet:SUBMIT name="btn-save" label="Save" />
+				<renderlet:SUBMIT name="btn-close" label="Close" mode="clear" />
+			</childs>
+		</renderlet:BOX>
+
+	</elements>
+
+</formidable>

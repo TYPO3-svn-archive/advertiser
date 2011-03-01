@@ -1,0 +1,68 @@
+a:2:{s:4:"meta";a:3:{s:5:"title";s:0:"";s:5:"descr";s:0:"";s:7:"options";a:2:{s:10:"usageCount";N;s:19:"includeCodeAbstract";N;}}s:5:"files";a:1:{s:14:"MD5_f4ea64472e";a:4:{s:8:"filename";s:31:"pi3/class.tx_advertiser_pi3.php";s:8:"filesize";i:32396;s:6:"header";a:5:{s:4:"text";s:58:"
+
+Plugin 'Ads: Data edit' for the 'advertiser' extension.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:53:"@author	Ulfried Herrmann <herrmann@die-netzmacher.de>";i:1;s:14:"@package	TYPO3";i:2;s:25:"@subpackage	tx_advertiser";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:45:"Ulfried Herrmann <herrmann@die-netzmacher.de>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_advertiser ";}}}s:3:"DAT";a:17:{i:1;a:8:{s:6:"header";s:46:"class tx_advertiser_pi3 extends tslib_pibase {";s:5:"class";i:1;s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:5:{s:4:"text";s:58:"
+
+Plugin 'Ads: Data edit' for the 'advertiser' extension.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:53:"@author	Ulfried Herrmann <herrmann@die-netzmacher.de>";i:1;s:14:"@package	TYPO3";i:2;s:25:"@subpackage	tx_advertiser";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:45:"Ulfried Herrmann <herrmann@die-netzmacher.de>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_advertiser ";}}}s:7:"content";s:0:"";s:12:"content_size";i:469;s:13:"content_lines";i:7;s:6:"atLine";i:38;}i:3;a:7:{s:6:"header";s:32:"function main($content, $conf) {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:3:{s:4:"text";s:29:"
+
+Main method of your PlugIn
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"string";i:1;s:35:"$content: The content of the PlugIn";}i:1;a:2:{i:0;s:5:"array";i:1;s:31:"$conf: The PlugIn Configuration";}}s:6:"return";a:2:{i:0;s:3:"The";i:1;s:47:"content that should be displayed on the website";}}s:7:"content";s:0:"";s:12:"content_size";i:5153;s:13:"content_lines";i:148;s:6:"atLine";i:53;}i:5;a:7:{s:6:"header";s:43:"function getPidList($pidList, $recursive) {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:3:{s:4:"text";s:34:"
+
+get pid list for current record
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"[type]";i:1;s:13:"$pidList: ...";}i:1;a:2:{i:0;s:6:"[type]";i:1;s:15:"$recursive: ...";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:22:"/ string error message";}}s:7:"content";s:0:"";s:12:"content_size";i:1120;s:13:"content_lines";i:31;s:6:"atLine";i:209;}i:7;a:7:{s:6:"header";s:24:"function getEditMode() {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:3:{s:4:"text";s:51:"
+
+get edit mode (create/update) for current record
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:22:"/ string error message";}}s:7:"content";s:0:"";s:12:"content_size";i:2509;s:13:"content_lines";i:59;s:6:"atLine";i:246;}i:9;a:7:{s:6:"header";s:25:"function initFlexform() {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:3:{s:4:"text";s:50:"
+
+initializes the flexform and all config options
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:852;s:13:"content_lines";i:21;s:6:"atLine";i:311;}i:11;a:7:{s:6:"header";s:28:"function getFormConfFile() {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:3:{s:4:"text";s:19:"
+
+### add desc ###
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:13:"$formConfFile";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:2586;s:13:"content_lines";i:62;s:6:"atLine";i:338;}i:13;a:7:{s:6:"header";s:22:"function getPageId() {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:3:{s:4:"text";s:55:"
+
+### add desc ###
+only used to lead from step to step
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:1434;s:13:"content_lines";i:46;s:6:"atLine";i:407;}i:15;a:7:{s:6:"header";s:41:"function processData($aData, $step = 1) {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:3:{s:4:"text";s:19:"
+
+### add desc ###
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"[type]";i:1;s:11:"$aData: ...";}i:1;a:2:{i:0;s:6:"[type]";i:1;s:10:"$step: ...";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:153;s:13:"content_lines";i:4;s:6:"atLine";i:461;}i:17;a:7:{s:6:"header";s:110:"function getFormData($table, $sorting = 'title ASC', $prependEmpty = false, $pid = null, $_hidel10n = false) {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:3:{s:4:"text";s:180:"
+
+Static method for filling form data via formidable
+
+used as <userobj> in formidable form config file (xml)
+if selects/ radios etc. have to get their options from a related table
+";s:5:"param";a:5:{i:0;a:2:{i:0;s:6:"string";i:1;s:35:"$case: field to get possible values";}i:1;a:2:{i:0;s:4:"bool";i:1;s:54:"$prependEmpty: wether an empty row has to be prepended";}i:2;a:2:{i:0;s:6:"[type]";i:1;s:18:"$prependEmpty: ...";}i:3;a:2:{i:0;s:6:"[type]";i:1;s:9:"$pid: ...";}i:4;a:2:{i:0;s:6:"[type]";i:1;s:15:"$_hidel10n: ...";}}s:6:"return";a:2:{i:0;s:5:"array";i:1;s:5:"$data";}}s:7:"content";s:0:"";s:12:"content_size";i:3879;s:13:"content_lines";i:93;s:6:"atLine";i:479;}i:19;a:7:{s:6:"header";s:30:"function getFormValue($case) {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:3:{s:4:"text";s:138:"
+
+Method for default value for form data via formidable
+
+used as <userobj> in formidable form config file (xml)
+only needed for edit mode
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"string";i:1;s:33:"$case: field to get current value";}i:1;a:2:{i:0;s:3:"int";i:1;s:44:"$uid_local: The uid of current edited record";}}s:6:"return";a:2:{i:0;s:7:"integer";i:1;s:42:"uid_foreign: uid of current selected value";}}s:7:"content";s:0:"";s:12:"content_size";i:1168;s:13:"content_lines";i:31;s:6:"atLine";i:583;}i:21;a:7:{s:6:"header";s:35:"function parseDate($field, $case) {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:3:{s:4:"text";s:169:"
+
+parse diffenrece between today and timestamp from db as number of years/ months past
+
+used as <userobj> in formidable form config file (xml)
+only needed for edit mode
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"string";i:1;s:61:"$field: Name of field in local table containing the timestamp";}i:1;a:2:{i:0;s:6:"string";i:1;s:26:"$case: y(ears) || m(onths)";}}s:6:"return";a:2:{i:0;s:7:"integer";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:2133;s:13:"content_lines";i:64;s:6:"atLine";i:625;}i:23;a:7:{s:6:"header";s:59:"function storeMmData($mm_table, $uid_local, $uid_foreign) {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:3:{s:4:"text";s:39:"
+
+Method for storing data in mm tables
+";s:5:"param";a:3:{i:0;a:2:{i:0;s:6:"string";i:1;s:55:"Table name (without pre- and suffix, e.g. 'price_mode')";}i:1;a:2:{i:0;s:7:"integer";i:1;s:19:"uid of local record";}i:2;a:2:{i:0;s:5:"mixed";i:1;s:45:"uid (or array with uids) of foreign record(s)";}}s:6:"return";a:2:{i:0;s:4:"bool";i:1;s:36:"local value (mm relation true/false)";}}s:7:"content";s:0:"";s:12:"content_size";i:1610;s:13:"content_lines";i:43;s:6:"atLine";i:698;}i:25;a:7:{s:6:"header";s:25:"function adminMail($ad) {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:3:{s:4:"text";s:30:"
+
+send control mail to admin
+
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"[type]";i:1;s:8:"$ad: ...";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:2513;s:13:"content_lines";i:83;s:6:"atLine";i:748;}i:27;a:7:{s:6:"header";s:31:"function redirect2imageForm() {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:5:{s:4:"text";s:39:"
+
+Redirect to image edit after ad edit
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}s:5:"other";a:1:{i:0;s:9:"@obsolete";}s:11:"other_index";a:1:{s:9:"@obsolete";a:1:{i:0;s:1:" ";}}}s:7:"content";s:0:"";s:12:"content_size";i:541;s:13:"content_lines";i:16;s:6:"atLine";i:838;}i:29;a:7:{s:6:"header";s:29:"function redirect2preview() {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:5:{s:4:"text";s:14:"
+
+:todo: desc
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}s:5:"other";a:1:{i:0;s:9:"@obsolete";}s:11:"other_index";a:1:{s:9:"@obsolete";a:1:{i:0;s:1:" ";}}}s:7:"content";s:0:"";s:12:"content_size";i:733;s:13:"content_lines";i:20;s:6:"atLine";i:861;}i:31;a:4:{s:6:"header";s:28:"function tmpGetOwnerZone() {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:3:{s:4:"text";s:34:"
+
+TEMP: Zone of ad owner
+
+obsolete";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:0:"";}}s:6:"atLine";i:889;}i:33;a:7:{s:6:"header";s:67:"public function log($line, $msg, $severity = 0, $dataVar = false) {";s:11:"parentClass";s:17:"tx_advertiser_pi3";s:4:"cDat";a:3:{s:4:"text";s:50:"
+
+Wrapper method for t3lib_div::devlog()
+
+obsolete";s:5:"param";a:4:{i:0;a:2:{i:0;s:6:"string";i:1;s:21:"Message (in english).";}i:1;a:2:{i:0;s:7:"integer";i:1;s:84:"Severity: 0 is info, 1 is notice, 2 is warning, 3 is fatal error, -1 is "OK" message";}i:2;a:2:{i:0;s:5:"array";i:1;s:40:"$dataVar: additional info for devlogging";}i:3;a:2:{i:0;s:6:"[type]";i:1;s:13:"$dataVar: ...";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:523;s:13:"content_lines";i:14;s:6:"atLine";i:909;}}}}}

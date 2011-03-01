@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>language labels for table:tx_advertiser_classes field:templatefile</description>
+		<type>database</type>
+		<csh_table></csh_table>
+		<fileId>EXT:advertiser/pi3/locallang_tx_advertiser_classes_templatefile.xml</fileId>
+		<labelContext type="array">
+		</labelContext>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="formconfigfileupload.upload.bid">Form config file (bid)</label>
+			<label index="formconfigfileupload.upload.request">Form config file (request)</label>
+		</languageKey>
+
+		<languageKey index="de" type="array">
+			<label index="formconfigfileupload.upload.bid">Konfigurationsdatei für Formular (Angebot)</label>
+			<label index="formconfigfileupload.upload.request">Konfigurationsdatei für Formular (Gesuch)</label>
+		</languageKey>
+
+		<languageKey index="fr" type="array">
+			<label index="formconfigfileupload.upload.bid">Fichier de configuration pour le formulaire (Exigence)</label>
+			<label index="formconfigfileupload.upload.request">Fichier de configuration pour le formulaire (Demande)</label>
+		</languageKey>
+	</data>
+</T3locallang>

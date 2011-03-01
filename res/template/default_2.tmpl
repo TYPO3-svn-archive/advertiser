@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<body>
+<pre>
+<em>
+
+DEFAULT TEMPLATE FOR LIST VIEWS
+===============================
+This template is the default template for all list views.
+
+
+  CONTROLLING MARKERS
+  ===================
+  You can control the display of subparts and markers with typoscript:
+
+    plugin.tx_browser_pi1.views.list.XX.display {
+      searchform    = 1     // Display [1] or hide [0] the searchform
+      pagebrowser   = 1     // Display [1] or hide [0] the pagebrowser
+      a-z_Browser   = 1     // Display [1] or hide [0] the A-Z-Browser
+      table {
+        summary     = 1     // Display [1] or hide [0] the table summary
+        caption     = 1     // Display [1] or hide [0] the table caption
+      }
+    }
+
+    MODESELECTOR
+    ============
+    The display of the modeselector depends on the number of your views.
+    If you have only one list view, there won't be any modeselector.
+    If you have more than one list view, there will be a modeselector.
+
+  HANDLEAS...
+  ===========
+  If you want to display images as images (and not their filename) and/or
+  documents as icons (and not their filename) you have to configure the
+  handelAs... values
+
+    plugin.tx_browser_pi1.views.list.XX {
+      handleAs {
+        image     = tx_ships_main.images    // Value for marker ###IMAGE###
+        caption   = tx_ships_main.caption   // Use field as caption
+        imgAlt    = tx_ships_main.caption   // Use field as <alt>-tag
+        imgTitle  = tx_ships_main.caption   // Use field as <title>-tag
+        document  = tx_ships_main.documents // Display the mimetype icon
+      }
+    }
+
+</em>
+
+<!-- ###TEMPLATE_LIST### begin -->
+<!-- TMP begin -->
+        <!-- <div class="filterbox filterbox-productgroups">
+          <form action="###ACTION###" method="post" >
+          </form>
+        </div> -->
+<!-- TMP end -->
+<!-- ###SEARCHFORM### begin -->
+        <div class="searchbox searchbox-###VIEW###-###MODE###">
+          <form action="###ACTION###" method="post" >
+            ###TX_ADVERTISER_SELLER.TITLE###
+            ###TX_ADVERTISER_PRODUCTGROUPS.TITLE###
+            ###TX_ADVERTISER_ADS.ZONE###
+
+            <input                type="hidden" name="no_cache"               value="1" />
+            <input                type="hidden" name="###POINTER###"          value="" />
+            <input class="sword"  type="text"   name="tx_browser_pi1[sword]"  value="###SWORD###" onfocus="if (this.value == this.defaultValue) this.value = '';"" onblur="if (this.value == '') this.value = this.defaultValue;" />
+            <input class="button" type="submit"                               value="###BUTTON###" />
+          </form>
+        </div><!-- ###SEARCHFORM### end -->
+<!-- ###AZSELECTOR### begin -->
+        <div class="azSelector azSelector-###UL_VIEW###-###UL_MODE###">
+          <ul class="azSelector azSelector-###UL_VIEW###-###UL_MODE###"><!-- ###AZSELECTORTABS### begin -->
+            <li###LI_CLASS###>###TAB###</li><!-- ###AZSELECTORTABS### end -->
+          </ul>
+        </div><!-- ###AZSELECTOR### end -->
+<!-- ###MODESELECTOR### begin -->
+        <div class="modeSelector modeSelector-###VIEW###-###MODE###">
+          <ul class="modeSelector modeSelector-###VIEW###-###MODE###"><!-- ###MODESELECTORTABS### begin -->
+            <li###CLASS###>###TABS###</li><!-- ###MODESELECTORTABS### end -->
+          </ul>
+        </div><!-- ###MODESELECTOR### end -->
+<!-- ###LISTVIEW### begin -->
+        <div class="###VIEW###view ###VIEW###view-###MODE###">
+          <table class="tx-arj"###SUMMARY###>
+            ###CAPTION### <!-- ###LISTHEAD### begin -->
+            <thead>
+              <tr><!-- ###LISTHEADITEM### begin -->
+                <th###CLASS###>###ITEM###</th><!-- ###LISTHEADITEM### end -->
+              </tr>
+            </thead><!-- ###LISTHEAD### end -->
+            <tbody><!-- ###LISTBODY### begin -->
+              <tr###CLASS###><!-- ###LISTBODYITEM### begin -->
+                <td###CLASS###>###ITEM###</td><!-- ###LISTBODYITEM### end -->
+              </tr><!-- ###LISTBODY### end -->
+            </tbody>
+          </table>
+        </div><!-- ###LISTVIEW### end -->
+<!-- ###PAGEBROWSER### begin -->
+        <div class="browsebox browsebox-###VIEW###-###MODE###">
+          ###RESULT_AND_ITEMS###
+        </div><!-- ###PAGEBROWSER### end -->
+<!-- ###TEMPLATE_LIST### end -->
+
+
+
+
+
+<em>
+
+DEFAULT TEMPLATE FOR SINGLE VIEWS WITH TABLE
+============================================
+THIS SHOULD BE THE DEFAULT FOR A SINGLE VIEW!
+
+This template is used, if you have configured your typoscript like this:
+plugin.tx_browser_pi1.views.single.XX.template.default = 1
+
+  CONTROLLING MARKERS
+  ===================
+  You can control the display of subparts and markers with typoscript:
+
+    plugin.tx_browser_pi1.views.single.XX.display {
+      title         = 1     // Display [1] or hide [0] the title
+      table {
+        summary     = 1     // Display [1] or hide [0] the table summary
+        caption     = 1     // Display [1] or hide [0] the table caption
+      }
+      backbutton    = 1     // Display [1] or hide [0] the backbutton
+    }
+
+    MODESELECTOR
+    ============
+    The display of the modeselector depends on the number of your views.
+    If you have only one single view, there won't be any modeselector.
+    If you have more than one single view, there will be a modeselector.
+
+  HANDLEAS...
+  ===========
+  If you want to display images as images (and not their filename) and/or
+  documents as icons (and not their filename) you have to configure the
+  handelAs... values
+
+    plugin.tx_browser_pi1.views.single.XX {
+      handleAs {
+        image     = tx_ships_main.images    // Value for marker ###IMAGE###
+        caption   = tx_ships_main.caption   // Use field as caption
+        imgAlt    = tx_ships_main.caption   // Use field as <alt>-tag
+        imgTitle  = tx_ships_main.caption   // Use field as <title>-tag
+        document  = tx_ships_main.documents // Display the mimetype icon
+    }
+
+</em>
+
+<!-- ###TEMPLATE_SINGLE### begin -->
+<!-- ###MODESELECTOR### begin -->
+        <div class="modeSelector modeSelector-###VIEW###-###MODE###">
+          <ul class="modeSelector modeSelector-###VIEW###-###MODE###"><!-- ###MODESELECTORTABS### begin -->
+            <li###CLASS###>###TABS###</li><!-- ###MODESELECTORTABS### end -->
+          </ul>
+        </div><!-- ###MODESELECTOR### end --><!-- ###SINGLEVIEW### begin -->
+        <div clsss="directcontact">
+          direct contact
+				</div>
+        <div class="###VIEW###view ###VIEW###view-###MODE###">
+          <h1>###TITLE###</h1><!-- ###BACKBUTTON### begin -->
+          <p class="backbutton">
+            ###BUTTON###
+          </p><!-- ###BACKBUTTON### end -->
+          <table###SUMMARY###>
+            ###CAPTION###<!-- ###SINGLEBODY### begin -->
+            <tbody><!-- ###SINGLEBODYROW### begin -->
+              <tr###CLASS###>
+                <th>###FIELD###</th>
+                <td>###VALUE###</td>
+              </tr><!-- ###SINGLEBODYROW### end -->
+            </tbody><!-- ###SINGLEBODY### end -->
+          </table><!-- ###BACKBUTTON### begin -->
+          <p class="backbutton">
+            ###BUTTON###
+          </p><!-- ###BACKBUTTON### end -->
+        </div><!-- ###SINGLEVIEW### end -->
+<!-- ###TEMPLATE_SINGLE### end -->
+
+
+
+
+
+<em>
+
+TEMPLATE FOR SINGLE VIEWS LIKE A CONTENT ELEMENT
+================================================
+This template is used, if you have configured your typoscript like this:
+plugin.tx_browser_pi1.views.single.XX.template.image_text = 1
+
+  HANDLEAS...
+  ===========
+  You have to configure the handelAs... values, otherwise it is unpossible for
+  the browser to know, which marker should substituted with which SQL field.
+
+    plugin.tx_browser_pi1.views.single.XX {
+      handleAs {
+        image     = tx_ships_main.images    // Value for marker ###IMAGE###
+        caption   = tx_ships_main.caption   // Use field as caption
+        imgAlt    = tx_ships_main.caption   // Use field as <alt>-tag
+        imgTitle  = tx_ships_main.caption   // Use field as <title>-tag
+        document  = tx_ships_main.documents // Display the mimetype icon
+        text      = tx_ships_main.history   // Value for marker ###TEXT###
+        text.RTE  = 1                       // Output: [0] without any HTML-Format; [1] with HTML-Tags
+      }
+    }
+
+  CONTROLLING MARKERS
+  ===================
+  You can control the display of subparts and markers with typoscript:
+
+    plugin.tx_browser_pi1.views.single.XX.display {
+      title         = 1     // Display [1] or hide [0] the title
+      backbutton    = 1     // Display [1] or hide [0] the backbutton
+    }
+
+    MODESELECTOR
+    ============
+    The display of the modeselector depends on the number of your views.
+    If you have only one single view, there won't be any modeselector.
+    If you have more than one single view, there will be a modeselector.
+
+</em>
+
+<!-- ###TEMPLATE_SINGLE_IMGTXT### begin -->
+		  <div id="content-info">
+<!-- ###MODESELECTOR### begin -->
+        <div class="modeSelector modeSelector-###VIEW###-###MODE###">
+          <ul class="modeSelector modeSelector-###VIEW###-###MODE###"><!-- ###MODESELECTORTABS### begin -->
+            <li###CLASS###>###TABS###</li><!-- ###MODESELECTORTABS### end -->
+          </ul>
+        </div><!-- ###MODESELECTOR### end --><!-- ###SINGLEVIEW### begin -->
+        <div class="###VIEW###view ###VIEW###view-###MODE###">
+          <p class="backbutton">
+            ###BUTTON###
+          </p><!-- ###BACKBUTTON### end -->
+          <h2 class="csc-firstHeader">###TITLE###</h2>
+          <table###SUMMARY###>
+            ###CAPTION###<!-- ###SINGLEBODY### begin -->
+            <tbody><!-- ###SINGLEBODYROW### begin -->
+              <tr###CLASS###>
+                <th>###FIELD###</th>
+                <td>###VALUE###</td>
+              </tr><!-- ###SINGLEBODYROW### end -->
+            </tbody><!-- ###SINGLEBODY### end -->
+          </table><!-- ###BACKBUTTON### begin -->
+					<h3>Artikelbeschreibung</h3>
+          <div class="text">###TEXT###</div>
+          <p class="backbutton">
+            ###BUTTON###
+          </p><!-- ###BACKBUTTON### end -->
+        </div>
+			</div>
+
+			<div id="content-right">
+        <div class="image">###IMAGE###</div>
+
+				<form class="helper-form" action="">
+          <input type="submit" value="Angebot merken" />
+				</form>
+
+        <h3>Direkt-Kontakt zum Verkäufer</h3>
+				<form class="helper-form" action="">
+          <input type="text" value="Ihr Name" onclick="if(this.value==this.defaultValue) this.value=''" />
+          <input type="text" value="Ihre E-Mailadresse" onclick="if(this.value==this.defaultValue) this.value=''" />
+          <textarea onclick="if(this.value==this.defaultValue) this.value=''">Ihre Frage</textarea>
+          <input type="submit" value="Senden" oncklick="return false;" />
+          
+				</form>
+			</div><!-- /#content-right -->
+			<div class="cb"></div>
+<!-- ###SINGLEVIEW### end -->
+<!-- ###TEMPLATE_SINGLE_IMGTXT### end -->
+
+
+
+
+</pre>
+  </body>
+</html>

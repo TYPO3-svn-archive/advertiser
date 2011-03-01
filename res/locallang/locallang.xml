@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_browser&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="filter_firstitem_default">– All entries –</label>
+			<label index="filter_firstitem_advertiser_group">– Commercial and private –</label>
+			<label index="filter_firstitem_productgroup">– Productgroup –</label>
+			<label index="filter_firstitem_manufacturer">– Manufacturer –</label>
+			<label index="filter_firstitem_productprofile">– Profile –</label>
+			<label index="filter_firstitem_zone">– Region –</label>
+			<label index="display.single.backbutton">« Back to list</label>
+		</languageKey>
+		<languageKey index="default" type="array">
+			<label index="filter_firstitem_default">– Alle Einträge –</label>
+			<label index="filter_firstitem_advertiser_group">– Gewerblich und privat –</label>
+			<label index="filter_firstitem_productgroup">– Produktgruppe –</label>
+			<label index="filter_firstitem_productprofile">– Bereich –</label>
+			<label index="filter_firstitem_manufacturer">– Hersteller/Marke –</label>
+			<label index="filter_firstitem_zone">– Region –</label>
+			<label index="display.single.backbutton">« Zurück zur Übersicht</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<formidable version="0.6.0">
+	<meta>
+		<name>Create/edit an ad</name>
+		<form formid="tx_advertiser_pi3">
+			<custom><![CDATA[ class="advertiser" ]]></custom>
+		</form>
+		<debug>false</debug>
+		<displaylabels>true</displaylabels>
+	</meta>
+	<control>
+		<datahandler:DB>
+			<tablename>tx_advertiser_ads</tablename>
+			<keyname>uid</keyname>
+			<process>
+				<beforeCreation>
+					<userobj>
+						<php><![CDATA[/*<?php*/
+                            ##unset($_SESSION['tx_advertiser_pi3']['recordUid']);
+						/*?>*/]]></php>
+					</userobj>
+				</beforeCreation>
+				<beforeEdition>
+					<userobj>
+						<php><![CDATA[/*<?php*/
+							$aFormData = $this->oDataHandler->_getFormData();
+                            ##echo '<pre>$aFormData: ' . print_r($this->aUserObjParamsStack[0], 1) . '</pre>'; exit;
+                            $_imageNames = $this->aUserObjParamsStack[0];
+							$_images = array();
+							for ($i = 1; $i <= 5; $i++) {
+								if (!empty($_imageNames['image_' . $i])) {
+								    $_images[] = $_imageNames['image_' . $i];
+								}
+							}
+							$_images = implode(',', $_images);
+							##echo '<pre>$_images: ' . print_r($_images, 1) . '</pre>'; exit;
+							// update
+							// changing tstamp
+							$aData = array(
+								'image' => $_images,
+							);
+
+							unset($_SESSION['tx_advertiser_pi3']['recordUid']);
+
+							return $aData;
+						/*?>*/]]></php>
+					</userobj>
+				</beforeEdition>
+			</process>
+		</datahandler:DB>
+		<renderer:STANDARD />
+		<actionlets>
+			<actionlet:REDIRECT>
+				<pageid>17<!-- ### dynamisieren ### --></pageid>
+			</actionlet:REDIRECT>
+		</actionlets>
+	</control>
+	<elements>
+		<renderlet:FILE name="image_1" label="LLL:EXT:advertiser/res/formidable/locallang.xml:label.element.image1" class="input-file">
+			<data targetdir="/uploads/tx_advertiser/" />
+		</renderlet:FILE>
+		<renderlet:FILE name="image_2" label="LLL:EXT:advertiser/res/formidable/locallang.xml:label.element.image2" class="input-file">
+			<data targetdir="/uploads/tx_advertiser/" />
+		</renderlet:FILE>
+		<renderlet:FILE name="image_3" label="LLL:EXT:advertiser/res/formidable/locallang.xml:label.element.image3" class="input-file">
+			<data targetdir="/uploads/tx_advertiser/" />
+		</renderlet:FILE>
+		<renderlet:FILE name="image_4" label="LLL:EXT:advertiser/res/formidable/locallang.xml:label.element.image4" class="input-file">
+			<data targetdir="/uploads/tx_advertiser/" />
+		</renderlet:FILE>
+		<renderlet:FILE name="image_5" label="LLL:EXT:advertiser/res/formidable/locallang.xml:label.element.image5" class="input-file">
+			<data targetdir="/uploads/tx_advertiser/" />
+		</renderlet:FILE>
+
+		<renderlet:SUBMIT label="LLL:EXT:advertiser/res/formidable/locallang.xml:label.element.submit" class="input-submit" />
+	</elements>
+</formidable>

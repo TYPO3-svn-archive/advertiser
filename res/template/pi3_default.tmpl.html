@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<body>
+<pre>
+<em>
+
+DEFAULT TEMPLATE FOR NEW ADS: STEP 1 - CHOOSE ADS CLASS
+===============================
+
+</em>
+
+<!-- ###TEMPLATE_CLASSSELECTOR### begin -->
+<div class="classselector tx-arj">
+	<h2>###STEPINFOTEXT###</h2>
+	<form action="###ACTION###" id="aj-classselector-form" method="###METHOD###">
+		<div class="col-left required"><h3>###CLASSHEADER###</h3></div>
+		<div class="col-right">
+			<ul>
+				<!-- ###LISTBODYITEM### begin -->
+				<li class="class-item">
+					<input type="radio" id="aj-class-###CLASSID###" name="tx_advertiser_pi3[class]" value="###CLASSID###" ###CLASSPROPERTIES### ###CHECKED### />
+					<label for="aj-class-###CLASSID###"><strong>###CLASSTITLE###</strong></label>
+
+					<div id="aj-box_###CLASSID###" class="box-conditional ###CONDITIONAL###">
+						<!-- ###TYPESELECT### begin -->
+						<h3 class="col-left required">###TYPEHEADER###</h3>
+						<ul>
+							<!-- ###TYPESELECTITEM### begin -->
+							<li class="type-item">
+								<input type="radio" id="aj-type_###CLASSID###_###TYPEID###" name="tx_advertiser_pi3[type]" value="###TYPEID###"
+									class="radio-conditional" onclick="new Effect.Appear('aj-box_submit', {duration:1});" />
+								<label for="aj-type_###CLASSID###_###TYPEID###">###TYPETITLE###</label>
+							</li>
+							<!-- ###TYPESELECTITEM### end -->
+						</ul>
+						<!-- ###TYPESELECT### end -->
+
+						<!-- ###INFOTEXT### begin -->
+						<p>###INFOTEXTCONTENT###</p>
+						<!-- ###INFOTEXT### end -->
+					</div>
+				</li>
+				<!-- ###LISTBODYITEM### end -->
+			</ul>
+		</div>
+		<div class="cl" id="aj-box_submit">
+			<input type="submit" class="input-submit" value="###SUBMITVALUE###" />
+		</div>
+	</form>
+</div>
+
+<script type="text/javascript">
+		//  hide all conditional elements on load
+	$$('.conditional').each( function(elm) {
+		elm.hide();
+	});
+	    //  hide submit button on load
+	new Effect.Fade('aj-box_submit', {duration:0});
+
+	//  if an element was blinded down by toggleDisplay() its name is stored here
+	var objBlindedDown = '';
+
+	// -------------------------------------------------------------------------
+	/**
+	 * display element obj and hide objBlindedDown if is set
+	 * uses scriptaculous
+	 *
+	 * @param	object   obj: contains the input value (should be integer)
+	 */
+	function toggleDisplay(obj) {
+		var elm = 'aj-box_' + obj;
+			//  do nothing if obj is already blinded down
+		if (elm == objBlindedDown) {
+		    return false;
+		}
+
+			//  hide objBlindedDown if is set
+		if (objBlindedDown != '') {
+			new Effect.BlindUp(objBlindedDown, {duration:0.4});
+		}
+			//  hide submit button again
+		new Effect.Fade('aj-box_submit', {duration:0});
+		    //  uncheck all conditional radio buttons
+		$$('.radio-conditional').each( function(elm) {
+			elm.checked = false;
+		});
+			//  display element obj
+		new Effect.BlindDown(elm, {duration:0.4});
+		objBlindedDown = elm;
+	}
+</script>
+<!-- ###TEMPLATE_CLASSSELECTOR### end -->
+
+DEFAULT TEMPLATE FOR NEW ADS: STEP 2 - ADS DATA FORM
+===============================
+
+</em>
+
+<!-- ###TEMPLATE_ADSDATAFORM### begin -->
+<h2>###STEPINFOTEXT###</h2>
+<h3>###ADSTYPEDETAILS###</h3>
+<p>###INFOREQUIREDFIELDS###</p>
+###ADSDATAFORM###
+<p>###INFONEXTSTEPEDITIMAGES###</p>
+<!-- ###TEMPLATE_ADSDATAFORM### end -->
