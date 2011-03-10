@@ -332,10 +332,17 @@ class tx_advertiser_pi2 extends tslib_pibase {
 						t3lib_div::devlog('FORM: lastImageInfo' . $err, $this->extKey, -1, $arr);
 					}
 
+### uherrmann 2011-03-10: avoid 'advertiser' in img src:
+### @todo: make it configurable in TS
+##					$content .= '
+##					<div class="image-container">
+##						<input type="checkbox" name="tx_advertiser_pi2[image_delete][]" value="' . $iVal . '" class="ip-checkbox" />
+##						<img src="' . $this->extHref . 'pi2/imagecontainer.gif" class="image" style="background-image: url(' . $iRsrc . ');" />
+##					</div>';
 					$content .= '
 					<div class="image-container">
 						<input type="checkbox" name="tx_advertiser_pi2[image_delete][]" value="' . $iVal . '" class="ip-checkbox" />
-						<img src="' . $this->extHref . 'pi2/imagecontainer.gif" class="image" style="background-image: url(' . $iRsrc . ');" />
+						<img src="/clear.gif" class="image" style="background-image: url(' . $iRsrc . '); border: 1px solid rgb(211,211,211); height: 150px; width: 150px;" />
 					</div>';
 				}
 
