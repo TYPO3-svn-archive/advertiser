@@ -4,6 +4,12 @@
 	- Publishing
 	Ulfried Herrmann  <herrmann.at.die-netzmacher.de>
 
+0.1.6
+	2011-03-22
+	- Bug fixing
+		- Field vat gets in BE always a value while editing, empty value added
+	Ulfried Herrmann  <herrmann.at.die-netzmacher.de>
+
 0.1.5
 	2010-12-19
 	- Maintenance

@@ -350,6 +350,9 @@ $TCA['tx_advertiser_ads'] = array(
 				'foreign_table'       => 'tx_advertiser_vat',
 				'foreign_table_where' => 'AND tx_advertiser_vat.deleted = 0 AND tx_advertiser_vat.hidden = 0 ORDER BY tx_advertiser_vat.sorting',
 				'size'                => 1,
+				'items' => array(
+					array('', ''),
+				),
 				'minitems'            => 0,
 				'maxitems'            => 1,
 			),

@@ -11,8 +11,8 @@
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'Classified ads',
-	'description' => 'Manage classified advertisements',
+	'title' => 'Advertiser',
+	'description' => 'Manage Classified Advertisements',
 	'category' => 'plugin',
 	'author' => 'Ulfried Herrmann',
 	'author_email' => 'herrmann.at.die-netzmacher.de',
@@ -29,7 +29,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
 	'author_company' => 'Die Netzmacher',
-	'version' => '0.1.5',
+	'version' => '0.1.6',
 	'constraints' => array(
 		'depends' => array(
 			'cms' => '',
